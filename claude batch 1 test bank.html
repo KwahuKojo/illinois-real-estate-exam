@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Illinois Real Estate Exam Test Bank</title>
+<meta name="description" content="Interactive practice test bank for the Illinois real estate broker exam: separate Illinois and National question banks, exam simulations, flashcards and math drills.">
+<style>
+:root{--paper:#f4f1e8;--card:#fffdf8;--ink:#17283a;--muted:#5d6b78;--line:#d9d3c3;--accent:#c8551f;--accent-ink:#fff;--navy:#17324d;--ok:#1d7a4c;--ok-bg:#e3f3ea;--bad:#b3261e;--bad-bg:#fbe9e7;--grid:rgba(23,50,77,.07)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#10181f;--card:#18232d;--ink:#e8e4d8;--muted:#9aa7b3;--line:#2c3a47;--accent:#f0803f;--accent-ink:#17110c;--navy:#0c141b;--ok:#5fcf95;--ok-bg:#16332a;--bad:#ff8a80;--bad-bg:#3a1d1b;--grid:rgba(255,255,255,.05)}}
+:root[data-theme=dark]{--paper:#10181f;--card:#18232d;--ink:#e8e4d8;--muted:#9aa7b3;--line:#2c3a47;--accent:#f0803f;--accent-ink:#17110c;--navy:#0c141b;--ok:#5fcf95;--ok-bg:#16332a;--bad:#ff8a80;--bad-bg:#3a1d1b;--grid:rgba(255,255,255,.05)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:36px 36px}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.2;margin:0;text-wrap:balance}
+button{font:inherit;color:inherit;cursor:pointer}
+.top{background:var(--navy);color:#f4f1e8;border-bottom:4px solid var(--accent)}
+.top .in{max-width:980px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-size:1.15rem;letter-spacing:.01em;background:none;border:0;color:inherit;padding:0;text-align:left}
+.brand small{display:block;font:600 .68rem/1.4 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e9a37c}
+.top .sp{flex:1}
+.ghost{background:transparent;border:1px solid rgba(255,255,255,.3);color:#f4f1e8;border-radius:6px;padding:6px 12px;font-size:.85rem}
+main{max-width:980px;margin:0 auto;padding:26px 20px 70px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+.lead{color:var(--muted);max-width:64ch;margin:8px 0 22px}
+.banks{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:26px}
+.bank{position:relative;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:10px;padding:20px 20px 18px;width:100%}
+.bank[aria-pressed=true]{border-color:var(--accent);box-shadow:5px 5px 0 var(--accent)}
+.bank .tag{font:700 .68rem/1 system-ui;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.bank h2{font-size:1.5rem;margin:6px 0 4px}
+.bank p{margin:0;color:var(--muted);font-size:.9rem}
+.nums{display:flex;gap:22px;margin-top:14px}
+.nums b{display:block;font:700 1.35rem/1.1 Georgia,serif;font-variant-numeric:tabular-nums}
+.nums span{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sec{font:700 .72rem/1 system-ui;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:30px 0 12px;display:flex;align-items:center;gap:12px}
+.sec:after{content:"";flex:1;height:1px;background:var(--line)}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+.mode{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:15px 16px;border-left:5px solid var(--navy)}
+.mode:hover,.bank:hover{border-color:var(--accent)}
+.mode.hot{border-left-color:var(--accent)}
+.mode b{display:block;font-family:Georgia,serif;font-size:1.08rem}
+.mode span{font-size:.86rem;color:var(--muted)}
+.trow{display:grid;grid-template-columns:minmax(150px,1.3fr) 3fr auto;gap:14px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+.trow:last-child{border:0}
+.bar{height:10px;background:var(--line);border-radius:5px;overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.bar .g{background:var(--ok)}.bar .r{background:var(--bad)}
+.trow em{font-style:normal;color:var(--muted);font-variant-numeric:tabular-nums;font-size:.84rem;white-space:nowrap}
+.btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:7px;padding:11px 20px;font-weight:650}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+fieldset{border:1px solid var(--line);border-radius:8px;margin:0 0 16px;padding:14px 16px}
+legend{font:700 .72rem/1 system-ui;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 6px}
+.chk{display:inline-flex;align-items:center;gap:7px;margin:5px 16px 5px 0;font-size:.93rem}
+.qhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px;font-size:.86rem;color:var(--muted)}
+.chip{font:700 .68rem/1 system-ui;letter-spacing:.1em;text-transform:uppercase;background:var(--navy);color:#f4f1e8;padding:5px 9px;border-radius:4px}
+.timer{font:700 1.05rem/1 ui-monospace,Menlo,Consolas,monospace;color:var(--ink);font-variant-numeric:tabular-nums}
+.timer.low{color:var(--bad)}
+.prog{height:6px;background:var(--line);border-radius:3px;margin-bottom:18px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.qtext{font:1.28rem/1.4 Georgia,serif;margin:4px 0 18px}
+.opt{display:flex;gap:12px;width:100%;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:9px;align-items:flex-start}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt .k{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font:700 .8rem/1 system-ui;opacity:.75}
+.opt.sel{border-color:var(--accent);box-shadow:inset 4px 0 0 var(--accent)}
+.opt.right{border-color:var(--ok);background:var(--ok-bg)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt:disabled{cursor:default;color:inherit}
+.why{border-left:4px solid var(--accent);background:var(--card);padding:12px 16px;margin:14px 0;border-radius:0 8px 8px 0}
+.why b{font-family:Georgia,serif}
+.nav{display:flex;flex-wrap:wrap;gap:5px;margin-top:18px}
+.nav button{width:34px;height:30px;border:1px solid var(--line);background:var(--card);border-radius:4px;font-size:.78rem;font-variant-numeric:tabular-nums}
+.nav .a{background:var(--navy);color:#f4f1e8;border-color:var(--navy)}
+.nav .c{outline:2px solid var(--accent);outline-offset:1px}
+.nav .f{border-color:var(--accent);border-width:2px}
+.score{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.big{font:700 4rem/1 Georgia,serif;font-variant-numeric:tabular-nums}
+.stamp{font:800 .95rem/1 system-ui;letter-spacing:.2em;text-transform:uppercase;padding:9px 14px;border:3px solid;border-radius:6px;transform:rotate(-4deg)}
+.stamp.p{color:var(--ok)}.stamp.x{color:var(--bad)}
+.rev{border-bottom:1px dashed var(--line);padding:14px 0}
+.rev p{margin:4px 0}.rev .q{font-family:Georgia,serif;font-size:1.05rem}
+.ok{color:var(--ok)}.no{color:var(--bad)}
+.flash{min-height:230px;display:flex;flex-direction:column;justify-content:center;text-align:center;cursor:pointer}
+.flash .ans{font:700 1.3rem/1.35 Georgia,serif;color:var(--accent);margin:8px 0}
+input[type=search]{width:100%;padding:11px 14px;border:1.5px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit}
+.foot{color:var(--muted);font-size:.8rem;margin-top:40px;max-width:76ch}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (max-width:560px){.qtext{font-size:1.12rem}.big{font-size:3rem}.trow{grid-template-columns:1fr auto}.trow .bar{grid-column:1/-1;order:3}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="in"><button class="brand" data-go="home"><small>Illinois broker exam</small>Real Estate Test Bank</button><span class="sp"></span><button class="ghost" data-go="home">Home</button><button class="ghost" id="theme">Light / dark</button></div></header>
+<main id="app"><noscript>This test bank needs JavaScript turned on.</noscript></main>
+<script>
+// Format: [topic, question, CORRECT answer, wrong, wrong, wrong, explanation]. Options are shuffled at runtime.
+const NATIONAL = [
+// ---------- Property ownership ----------
+["PO","Which of the following is the most complete form of ownership in real estate?","Fee simple absolute","Life estate","Fee simple defeasible","Leasehold estate","Fee simple absolute has no conditions or time limit and is freely inheritable and transferable."],
+["PO","A grandmother deeds her home to her grandson 'for as long as he lives', after which it passes to a charity. The charity holds a:","Remainder interest","Reversionary interest","Life estate pur autre vie","Leasehold interest","A future interest held by a third party named by the grantor is a remainder. If it returned to the grantor it would be a reversion."],
+["PO","A life estate measured by the life of someone other than the life tenant is called:","Life estate pur autre vie","Conventional reversion","Estate at sufferance","Fee tail","Pur autre vie means 'for the life of another'."],
+["PO","Which unity is required for joint tenancy but NOT for tenancy in common?","Unity of time","Unity of possession","Unity of use","Unity of occupancy","Joint tenancy needs time, title, interest and possession. Tenancy in common needs only possession."],
+["PO","Three joint tenants own a parcel. One sells her interest to an outsider. The outsider becomes a:","Tenant in common with the two remaining joint tenants","Joint tenant with the other two","Tenant by the entirety","Tenant at will","A conveyance severs the joint tenancy as to that share. The other two remain joint tenants with each other."],
+["PO","The distinguishing feature of joint tenancy is:","Right of survivorship","Unequal shares","The right to will one's share","Ownership limited to married couples","A deceased joint tenant's interest passes automatically to the surviving joint tenants, outside probate."],
+["PO","A tenant in common dies. Her interest passes to:","Her heirs or devisees","The surviving co-owners","The state","The lender","Tenancy in common has no survivorship. The share is inheritable."],
+["PO","Ownership of real property by one person alone is called ownership in:","Severalty","Common","Entirety","Trust","Severalty means the owner's interest is 'severed' from all others. It is sole ownership."],
+["PO","Which of the following is real property?","A built-in dishwasher","A tenant's trade fixtures","Harvested crops","A freestanding refrigerator","Items permanently attached become fixtures and are real property. Trade fixtures and severed crops are personal property."],
+["PO","Annual crops that require cultivation, such as corn, are called:","Emblements","Fixtures","Appurtenances","Fructus naturales","Emblements (fructus industriales) are treated as personal property."],
+["PO","The courts' most important test for deciding whether an item is a fixture is:","The intention of the party who attached it","The cost of the item","The size of the item","How long it has been in place","The tests are method of attachment, adaptation, agreement, and intent. Intent controls."],
+["PO","Shelving installed by a retail tenant for use in its business is a:","Trade fixture","Fixture owned by the landlord","Emblement","Appurtenance","Trade fixtures remain the tenant's personal property and may be removed before the lease ends."],
+["PO","The right of an owner whose land borders a river to use the water is a:","Riparian right","Littoral right","Prior appropriation right","Prescriptive right","Riparian applies to rivers and streams. Littoral applies to lakes and oceans."],
+["PO","Land gradually added to a riverbank by deposits of soil from the water is called:","Accretion","Avulsion","Erosion","Reliction","Accretion is gradual build-up. Avulsion is sudden loss. Reliction is land exposed when water recedes."],
+["PO","An easement that benefits a neighboring parcel of land is an easement:","Appurtenant","In gross","By condemnation","In severalty","An appurtenant easement runs with the land and involves a dominant and a servient estate."],
+["PO","A utility company's right to run power lines across many properties is an easement:","In gross","Appurtenant","By necessity","By prescription","An easement in gross benefits a person or company, not a parcel. There is no dominant estate."],
+["PO","The parcel that is burdened by an easement is the:","Servient estate","Dominant estate","Leased fee","Remainder estate","The servient estate serves. The dominant estate benefits."],
+["PO","A neighbor's garage extends two feet over the property line. This is:","An encroachment","An easement","A license","An appurtenance","An unauthorized physical intrusion onto another's land is an encroachment, usually found by survey."],
+["PO","Permission to enter another's land for a specific purpose, revocable at any time, is a:","License","Easement","Lease","Profit","A license is a personal, revocable privilege and is not an interest in land."],
+["PO","Which lien is a voluntary lien?","Mortgage lien","Property tax lien","Judgment lien","Mechanic's lien","The owner agrees to a mortgage. The others are imposed by law."],
+["PO","Which lien generally takes priority over all other liens regardless of recording date?","Real property tax lien","First mortgage","Judgment lien","Mechanic's lien","Property tax and special assessment liens are paid first."],
+["PO","A lien that attaches to all property of the debtor is a:","General lien","Specific lien","Voluntary lien","Equitable servitude","Judgments and income tax liens are general. Mortgages and property taxes are specific."],
+["PO","In a condominium, the unit owner holds:","Fee title to the unit plus an undivided interest in the common elements","Shares of stock and a proprietary lease","A leasehold in the land only","A tenancy at will in the building","Cooperative owners hold stock and a proprietary lease. Condominium owners hold real property."],
+["PO","The bundle of legal rights includes all of the following EXCEPT:","The right of taxation","The right of possession","The right of exclusion","The right of disposition","Taxation is a government power. The bundle is possession, control, enjoyment, exclusion, disposition."],
+// ---------- Land use controls ----------
+["LU","The government's power to take private property for public use on payment of just compensation is:","Eminent domain","Police power","Escheat","Taxation","The process of taking is condemnation. The power is eminent domain."],
+["LU","Zoning ordinances are an exercise of:","Police power","Eminent domain","Escheat","Private deed restriction","Police power lets government regulate for health, safety and welfare with no compensation."],
+["LU","Property passes to the state when an owner dies with no will and no heirs. This is:","Escheat","Eminent domain","Adverse possession","Reversion","Escheat prevents property from being ownerless."],
+["LU","A use that lawfully existed before a zoning change and is allowed to continue is a:","Legal nonconforming use","Variance","Special use permit","Spot zone","Often called a grandfathered use. It usually cannot be expanded or rebuilt after destruction."],
+["LU","An owner who needs to build two feet closer to the lot line than zoning allows, because of the lot's odd shape, should request a:","Variance","Nonconforming use","Rezoning","Building permit only","A variance allows a deviation because of a hardship specific to the property."],
+["LU","A church allowed in a residential zone because it serves the public interest typically receives a:","Conditional (special) use permit","Variance","Nonconforming use status","Buffer zone","A conditional use is a use the ordinance allows if stated conditions are met."],
+["LU","Private restrictions recorded by a developer to control lot use in a subdivision are:","Covenants, conditions and restrictions (CC&Rs)","Zoning ordinances","Building codes","Police powers","CC&Rs are private land use controls enforced by owners or the association."],
+["LU","When a deed restriction and a zoning ordinance conflict, which controls?","Whichever is more restrictive","The zoning ordinance always","The deed restriction always","Whichever was recorded first","The stricter limitation must be followed."],
+["LU","A strip of parkland separating a residential area from a commercial area is a:","Buffer zone","Variance","Setback","Easement in gross","Buffer zones ease the transition between incompatible uses."],
+["LU","After construction is completed and inspected, the municipality issues a:","Certificate of occupancy","Building permit","Variance","Certificate of title","A certificate of occupancy confirms the building meets code and may be occupied."],
+["LU","Which act regulates interstate sales of unimproved lots in large subdivisions?","Interstate Land Sales Full Disclosure Act","Truth in Lending Act","RESPA","Fair Housing Act","It requires registration and a property report for covered subdivisions sold across state lines."],
+["LU","Minimum distances that a structure must be placed from the lot lines are:","Setbacks","Easements","Encroachments","Density limits","Setbacks are set by zoning or deed restriction."],
+// ---------- Valuation ----------
+["VA","The four elements that create value are:","Demand, utility, scarcity, transferability","Time, title, interest, possession","Cost, price, value, worth","Location, size, age, condition","Remember DUST."],
+["VA","Which appraisal approach is most reliable for a single-family home in an active market?","Sales comparison approach","Cost approach","Income approach","Gross rent multiplier only","Recent sales of similar homes are the best evidence of value for houses."],
+["VA","Which approach is most appropriate for a library or a new special-purpose building?","Cost approach","Sales comparison approach","Income approach","Gross income multiplier","Special-purpose properties have few comparables and no income."],
+["VA","Which approach is primary for an apartment complex?","Income approach","Cost approach","Sales comparison approach","Replacement approach","Investors buy income property for its income stream."],
+["VA","A comparable has a fireplace worth $3,000 and the subject does not. The appraiser will:","Subtract $3,000 from the comparable's sale price","Add $3,000 to the comparable's sale price","Add $3,000 to the subject's value","Subtract $3,000 from the subject's value","Adjust the comparable, never the subject. Comparable better: subtract. Comparable poorer: add."],
+["VA","A loss in value from a poor floor plan, such as a bedroom reachable only through another bedroom, is:","Functional obsolescence","Physical deterioration","External obsolescence","Economic life","Functional obsolescence comes from design or outdated features within the property."],
+["VA","A home loses value because a landfill opens nearby. This is:","External (economic) obsolescence","Functional obsolescence","Curable physical deterioration","Regression","External obsolescence arises outside the property and is always incurable by the owner."],
+["VA","The principle that the worth of a lesser home rises because of better homes around it is:","Progression","Regression","Substitution","Contribution","Regression is the opposite: a fine home loses value among lesser ones."],
+["VA","The principle stating that a buyer will pay no more for a property than the cost of an equally desirable alternative is:","Substitution","Anticipation","Conformity","Contribution","Substitution underlies the sales comparison approach."],
+["VA","A swimming pool costs $40,000 but adds only $15,000 to market value. This shows the principle of:","Contribution","Substitution","Highest and best use","Anticipation","An improvement is worth what it adds to value, not what it costs."],
+["VA","The most probable price a property should bring in a competitive, open market is its:","Market value","Market price","Cost","Assessed value","Market price is what it actually sold for. Cost is what it took to produce."],
+["VA","The use that is legally permitted, physically possible, financially feasible and most productive is the:","Highest and best use","Conforming use","Nonconforming use","Plottage","All four tests must be met."],
+["VA","Combining adjoining lots so the whole is worth more than the sum of the parts produces:","Plottage value","Assemblage loss","Regression","Depreciation","Assemblage is the act of combining. Plottage is the resulting increase in value."],
+["VA","In the income approach, value equals:","Net operating income divided by the capitalization rate","Gross income multiplied by the capitalization rate","Net operating income multiplied by the gross rent multiplier","Cash flow minus debt service","Value = NOI / rate (the IRV formula)."],
+["VA","Which is NOT deducted to reach net operating income?","Mortgage principal and interest","Property management fees","Vacancy and collection losses","Property taxes","Debt service and depreciation are not operating expenses."],
+["VA","A comparative market analysis differs from an appraisal because a CMA:","Is prepared by a licensee to help set a price and is not an appraisal","Must follow USPAP","Is always ordered by the lender","Uses only the cost approach","A CMA uses sold, active and expired listings to suggest a price range."],
+["VA","The final step in which an appraiser weighs the three approaches to reach one value is:","Reconciliation","Averaging","Capitalization","Substitution","Reconciliation weighs each approach by its relevance. It is not a simple average."],
+// ---------- Financing ----------
+["FI","The document in which a borrower promises to repay a loan is the:","Promissory note","Mortgage","Deed of trust","Deed","The note is the evidence of debt. The mortgage or deed of trust is the security instrument."],
+["FI","In a mortgage, the borrower is the:","Mortgagor","Mortgagee","Trustee","Beneficiary","The mortgagor gives the mortgage. The mortgagee (lender) receives it."],
+["FI","A deed of trust has three parties: trustor, beneficiary and:","Trustee","Mortgagee","Vendor","Grantee","The trustee holds title for the lender (beneficiary) until the borrower (trustor) repays."],
+["FI","A clause letting the lender demand the full balance if the borrower defaults is the:","Acceleration clause","Alienation clause","Defeasance clause","Subordination clause","Acceleration makes the whole debt due, which permits foreclosure."],
+["FI","A clause requiring payoff of the loan when the property is sold is the:","Alienation (due-on-sale) clause","Acceleration clause","Defeasance clause","Prepayment clause","It stops a buyer from assuming the loan without lender consent."],
+["FI","The clause that requires the lender to release the lien when the loan is paid in full is the:","Defeasance clause","Alienation clause","Escalation clause","Habendum clause","Defeasance defeats the lender's interest on full payment."],
+["FI","One discount point equals:","1% of the loan amount","1% of the purchase price","1% of the down payment","One-eighth of 1% of the loan amount","Points are prepaid interest calculated on the loan amount."],
+["FI","A loan in which payments cover interest only, with the entire principal due at the end, is a:","Straight (term) loan","Fully amortized loan","Graduated payment loan","Reverse mortgage","A term loan ends with a balloon payment of the full principal."],
+["FI","In a fully amortized fixed-rate loan, as time passes each payment includes:","More principal and less interest","More interest and less principal","Equal principal and interest","Interest only","Interest is charged on the falling balance, so more of each level payment goes to principal."],
+["FI","FHA loans are:","Insured by the Federal Housing Administration","Guaranteed by the Department of Veterans Affairs","Made directly by HUD to borrowers","Free of mortgage insurance","FHA insures loans made by approved lenders and charges a mortgage insurance premium."],
+["FI","VA loans are:","Guaranteed by the Department of Veterans Affairs","Insured by the FHA","Available to any first-time buyer","Limited to 80% loan-to-value","VA guarantees part of the loan and allows eligible veterans to borrow with no down payment."],
+["FI","On a conventional loan, private mortgage insurance is usually required when:","The loan-to-value ratio exceeds 80%","The borrower is a veteran","The loan is FHA insured","The rate is adjustable","PMI protects the lender when the down payment is under 20%."],
+["FI","Fannie Mae and Freddie Mac operate mainly in the:","Secondary mortgage market","Primary mortgage market","Federal Reserve System","Title insurance market","They buy loans from lenders, which returns money to the primary market."],
+["FI","The Truth in Lending Act is implemented by:","Regulation Z","Regulation B","Regulation X","Regulation D","Regulation Z covers TILA. Regulation B covers ECOA. Regulation X covers RESPA."],
+["FI","Under the Truth in Lending Act, the total yearly cost of credit must be expressed as the:","Annual percentage rate","Nominal rate","Discount rate","Index plus margin","The APR includes interest and other finance charges."],
+["FI","The three-day right of rescission under the Truth in Lending Act applies to:","Refinancing a principal residence","A loan to purchase a principal residence","A loan on an investment property","Any commercial loan","Purchase-money first mortgages are exempt from rescission."],
+["FI","An advertisement states 'only $1,500 per month'. Under Regulation Z this is a trigger term requiring:","Full disclosure of the credit terms, including the APR","Nothing further","Disclosure of the property's assessed value","Approval by HUD","Stating a payment, down payment, term or finance charge triggers full disclosure. Stating only the APR does not."],
+["FI","RESPA prohibits:","Kickbacks and unearned fees for referring settlement services","Adjustable rate mortgages","Charging discount points","Dual agency","RESPA covers federally related loans on one-to-four family residences."],
+["FI","Under the TRID rule, the Loan Estimate must be delivered within how long after loan application?","3 business days","1 business day","7 business days","10 calendar days","The lender must provide the Loan Estimate within three business days of application."],
+["FI","Under the TRID rule, the borrower must receive the Closing Disclosure at least:","3 business days before consummation","1 business day before consummation","7 business days before consummation","At the closing table","This gives the borrower time to compare it with the Loan Estimate."],
+["FI","The Equal Credit Opportunity Act prohibits lenders from discriminating on the basis of:","Marital status, age and receipt of public assistance, among others","Credit score","Income level","Employment history","ECOA covers race, color, religion, national origin, sex, marital status, age and public assistance income."],
+["FI","A mortgage that covers more than one parcel of land is a:","Blanket mortgage","Package mortgage","Open-end mortgage","Wraparound mortgage","Developers use blanket mortgages with partial release clauses."],
+["FI","A mortgage that includes both real and personal property is a:","Package mortgage","Blanket mortgage","Purchase-money mortgage","Budget mortgage","For example, a furnished condominium financed with its furniture."],
+["FI","When the seller finances part of the price and takes back a note and mortgage from the buyer, it is a:","Purchase-money mortgage","Reverse mortgage","Blanket mortgage","Construction loan","Seller financing is also called a take-back mortgage."],
+["FI","A homeowner aged 62 or older who receives payments from a lender based on home equity, with repayment due on sale or death, has a:","Reverse mortgage","Graduated payment mortgage","Shared appreciation mortgage","Bridge loan","The loan balance grows over time and is repaid when the owner leaves the home."],
+["FI","A buyer who takes title 'subject to' the existing mortgage:","Is not personally liable for the debt","Becomes personally liable for the debt","Releases the seller from liability","Must be approved by the lender as the new borrower","Subject to: seller stays liable. Assuming: the buyer also becomes personally liable."],
+["FI","Charging more interest than the law allows is:","Usury","Redlining","Steering","Subordination","Usury laws set maximum interest rates."],
+["FI","A lender's refusal to make loans in a neighborhood because of its racial makeup is:","Redlining","Blockbusting","Steering","Panic peddling","Redlining violates the Fair Housing Act."],
+["FI","If a foreclosure sale does not bring enough to pay the debt, the lender may seek a:","Deficiency judgment","Lis pendens","Writ of attachment","Certificate of sale","A deficiency judgment is a personal judgment for the shortfall."],
+["FI","The borrower's right to reclaim the property before the foreclosure sale by paying what is owed is the:","Equitable right of redemption","Statutory right of redemption","Right of rescission","Right of first refusal","Equitable redemption is before the sale. Statutory redemption, where it exists, is after the sale."],
+// ---------- Agency ----------
+["AG","An agent authorized to perform one specific act or transaction for a principal is a:","Special agent","General agent","Universal agent","Subagent","A listing broker is a special agent of the seller."],
+["AG","A property manager who handles all ongoing matters for one property is typically a:","General agent","Special agent","Universal agent","Dual agent","A general agent represents the principal in a range of matters in one business activity."],
+["AG","The fiduciary duties an agent owes a principal are often remembered as OLD CAR. Which is NOT one of them?","Compensation","Obedience","Loyalty","Accounting","The duties are obedience, loyalty, disclosure, confidentiality, accounting, reasonable care."],
+["AG","A seller instructs the listing agent not to show the home to families with children. The agent should:","Refuse the instruction because it is unlawful","Follow it under the duty of obedience","Follow it if it is in writing","Show the home only to couples","Obedience extends only to lawful instructions."],
+["AG","A party who receives services from a licensee but is not represented by that licensee is a:","Customer","Client","Principal","Fiduciary","Clients are represented. Customers are owed honesty and fair dealing."],
+["AG","A licensee who represents both the buyer and the seller in the same transaction is a:","Dual agent","Subagent","Designated agent","Universal agent","Dual agency generally requires informed written consent of both parties."],
+["AG","An agency created by the parties' actions rather than by express agreement is:","Implied agency","Express agency","Agency coupled with an interest","Agency by ratification","Conduct can create an agency even when none was intended."],
+["AG","A principal accepts the benefit of an unauthorized act done on her behalf. The agency is created by:","Ratification","Estoppel","Necessity","Express agreement","Ratification approves the act after the fact."],
+["AG","Which listing gives the broker a commission no matter who sells the property?","Exclusive right to sell","Exclusive agency","Open listing","Net listing","Under exclusive agency the owner may sell personally and owe no commission."],
+["AG","Under an exclusive agency listing, the owner owes no commission if:","The owner finds the buyer without the broker's help","Another broker finds the buyer","The listing broker finds the buyer","The buyer pays cash","Only one broker is authorized, but the owner keeps the right to sell personally."],
+["AG","A listing in which the seller receives a set amount and the broker keeps everything above it is a:","Net listing","Open listing","Multiple listing","Exclusive agency listing","Net listings invite conflicts of interest and are illegal or discouraged in many states."],
+["AG","A listing agreement is best described as:","An employment contract between the seller and the broker","A contract to sell real estate","An option contract","A deed","The listing hires the broker. It does not transfer any interest in the property."],
+["AG","Which of the following terminates an agency relationship?","Death of either the principal or the broker","A change in market conditions","The agent's vacation","A rise in interest rates","Agency also ends by expiration, performance, mutual agreement, destruction of the property, or bankruptcy."],
+["AG","A broker is the 'procuring cause' of a sale when the broker:","Starts an unbroken chain of events that results in the sale","Places the listing in the MLS","Holds an open house","Is the first to show the property","Procuring cause determines who earned the commission."],
+["AG","A broker has earned a commission when the broker produces a buyer who is:","Ready, willing and able to buy on the seller's terms","Interested in the property","Pre-qualified only","Represented by an attorney","The commission is earned when such a buyer is produced, even if the seller later refuses to sell."],
+["AG","An exaggerated opinion such as 'this is the best view in the county' is:","Puffing","Fraud","Negligent misrepresentation","Latent defect disclosure","Puffing is opinion, not a statement of fact."],
+["AG","An agent knowingly tells a buyer the roof is new when it is 20 years old. This is:","Intentional misrepresentation (fraud)","Puffing","Innocent misrepresentation","Constructive notice","Fraud is a deliberate false statement of a material fact that the other party relies on."],
+["AG","A hidden structural problem that an ordinary inspection would not reveal is a:","Latent defect","Patent defect","Stigma","Encumbrance","Sellers and licensees must disclose known latent material defects."],
+["AG","A buyer's agent learns the buyer could pay much more than the offer. The agent must:","Keep this confidential","Tell the listing agent","Tell the seller","Disclose it if asked","Confidentiality protects the client's bargaining position."],
+["AG","A listing agent learns the seller's buyer has a weak financial position. The agent must:","Disclose it to the seller","Keep it confidential to protect the buyer","Tell only the lender","Ignore it","The agent's client is the seller. Disclosure of material facts is owed to the client."],
+["AG","Compensation in a real estate transaction:","Does not by itself determine who the agent represents","Always determines agency","Must be paid by the seller","Must be paid by the buyer","Agency is created by agreement and conduct, not by who pays."],
+["AG","Commission rates between a broker and a client are set by:","Negotiation between the broker and the client","The local association of REALTORS","State law","The multiple listing service","Any attempt by competitors to set rates together is price fixing."],
+// ---------- Property disclosures ----------
+["DI","Federal lead-based paint disclosure applies to most residential property built before:","1978","1968","1988","1996","Lead paint was banned for residential use in 1978."],
+["DI","Under the federal lead-based paint rule, buyers must be given:","A 10-day opportunity to conduct a lead inspection, unless waived","A free lead inspection paid by the seller","A guarantee the home is lead free","A 3-day right to cancel","Sellers must also disclose known hazards and provide the EPA pamphlet."],
+["DI","A colorless, odorless radioactive gas that enters buildings through foundations is:","Radon","Asbestos","Carbon monoxide","Urea formaldehyde","Radon comes from decaying uranium in soil and is linked to lung cancer."],
+["DI","Asbestos is most dangerous when it is:","Friable and releasing fibers into the air","Sealed behind walls","Encapsulated","Painted over","Friable means it crumbles easily. Undisturbed asbestos is often best left in place or encapsulated."],
+["DI","The federal law that created the Superfund to clean up hazardous waste sites is:","CERCLA","RESPA","FIRREA","ECOA","CERCLA can impose strict, joint and several, and retroactive liability on owners."],
+["DI","Under CERCLA, a current owner of contaminated land:","May be liable for cleanup even if someone else caused the contamination","Is never liable if a prior owner caused it","Is liable only if negligent","Is protected by title insurance","Liability is strict. The innocent landowner defense requires due diligence such as a Phase I assessment."],
+["DI","A property where a notorious crime occurred, with no physical defect, is called:","Stigmatized property","Blighted property","Brownfield","Nonconforming property","State law decides whether such facts must be disclosed."],
+["DI","A material fact is best defined as a fact that:","Would likely affect a reasonable person's decision to buy or the price paid","Appears in the listing","Is known to the lender","Concerns only the property's size","Known material defects must be disclosed."],
+["DI","Abandoned industrial sites with real or suspected contamination are called:","Brownfields","Wetlands","Flood plains","Greenbelts","Brownfields legislation encourages cleanup and reuse."],
+["DI","A lender will usually require flood insurance when the property is located in a:","Special flood hazard area identified by FEMA","Buffer zone","Planned unit development","Historic district","Federally related loans in special flood hazard areas require flood insurance."],
+["DI","A leaking underground storage tank is mainly a risk because it can:","Contaminate soil and groundwater","Release radon","Create friable asbestos","Raise carbon monoxide levels","Underground tanks are regulated by the EPA and state agencies."],
+["DI","Under the federal lead-based paint rule, real estate licensees must:","Make sure sellers and landlords know and meet their disclosure obligations","Personally test the property","Remove lead hazards before closing","Pay for the buyer's inspection","Licensees share responsibility for compliance. Records are kept three years."],
+// ---------- Contracts ----------
+["CO","The essential elements of a valid contract include all of the following EXCEPT:","Notarization","Offer and acceptance","Consideration","Legally competent parties","Also required: legal purpose. Real estate contracts must also be in writing under the statute of frauds."],
+["CO","A contract signed by a minor is generally:","Voidable by the minor","Void","Valid and enforceable against the minor","Unenforceable by either party","The minor may disaffirm. The adult is bound if the minor chooses to perform."],
+["CO","A contract to commit an illegal act is:","Void","Voidable","Valid","Unenforceable but valid","A contract with no legal purpose has no legal effect."],
+["CO","A contract in which both parties exchange promises is:","Bilateral","Unilateral","Executed","Implied","A sales contract is bilateral. An option is unilateral."],
+["CO","An option to purchase is a unilateral contract because:","Only the seller is obligated to perform","Both parties must perform","It needs no consideration","It cannot be assigned","The optionee may buy or not. The optionor must sell if the option is exercised."],
+["CO","A contract that has been signed but not yet fully performed is:","Executory","Executed","Void","Unilateral","Executory means something remains to be done. Executed means fully performed."],
+["CO","The statute of frauds requires that:","Contracts for the sale of real estate be in writing to be enforceable","All contracts be notarized","Fraud be reported within one year","Earnest money accompany every offer","It also covers leases longer than one year in most states."],
+["CO","A buyer makes an offer. The seller changes the closing date and signs. This is:","A counteroffer that terminates the original offer","An acceptance","A binding contract","An option","Any change in terms rejects the offer and creates a new one."],
+["CO","An offer may be revoked by the offeror:","At any time before acceptance is communicated","Only after it expires","Only with the offeree's consent","Never, once signed","An offer is not a contract until accepted and the acceptance is communicated."],
+["CO","Substituting a new contract and a new party for an old one, releasing the original party, is:","Novation","Assignment","Rescission","Subordination","Assignment transfers rights but the assignor may stay liable. Novation releases."],
+["CO","When a buyer transfers his rights under a purchase contract to another person, it is:","An assignment","A novation","A counteroffer","An accord","Contracts are assignable unless they prohibit it or are for personal services."],
+["CO","A court order requiring a party to carry out the contract as agreed is:","Specific performance","Liquidated damages","Rescission","Compensatory damages","Available because each parcel of real estate is unique."],
+["CO","An amount agreed in advance as compensation if a party breaches is:","Liquidated damages","Punitive damages","Specific performance","Nominal damages","Earnest money often serves as liquidated damages."],
+["CO","Returning the parties to their positions before the contract existed is:","Rescission","Novation","Assignment","Reformation","Rescission cancels the contract and restores what was exchanged."],
+["CO","The phrase 'time is of the essence' means:","Deadlines in the contract must be strictly met","The contract must close within 30 days","The offer expires in 24 hours","Performance may be delayed if reasonable","Missing a deadline is a breach when this clause is included."],
+["CO","A provision that makes a contract dependent on an event, such as the buyer obtaining financing, is a:","Contingency","Covenant","Novation","Warranty","If the contingency is not satisfied, the contract can be ended without default."],
+["CO","Earnest money is best described as:","Evidence of the buyer's good faith","Required for a valid contract","The broker's commission","The down payment required by the lender","Consideration in a sales contract is the exchange of promises. Earnest money is not legally required."],
+["CO","After signing a purchase contract and before closing, the buyer holds:","Equitable title","Legal title","Color of title","Fee simple title","Legal title passes on delivery and acceptance of the deed."],
+["CO","In a contract for deed (installment land contract), the seller is the:","Vendor, who keeps legal title until the price is paid","Vendee, who receives the deed at once","Mortgagee","Optionor","The buyer (vendee) has possession and equitable title."],
+["CO","A contract entered into under threat of force is:","Voidable by the victim","Void","Valid","Illegal","Duress, undue influence, fraud and misrepresentation make a contract voidable by the injured party."],
+["CO","An oral contract for the sale of real estate is generally:","Unenforceable","Void","Illegal","Fully enforceable","It may be valid between the parties but a court will not enforce it."],
+["CO","A right of first refusal gives the holder the right to:","Match an offer the owner is willing to accept from a third party","Buy at a fixed price at any time","Cancel the owner's listing","Renew a lease","Unlike an option, the owner need not sell at all."],
+["CO","Changes to a signed contract are made by:","A written amendment signed by all parties","The broker's initials","An oral agreement","The lender","An addendum adds terms at the start. An amendment changes terms later."],
+["CO","A seller dies after signing a purchase contract but before closing. Generally the contract is:","Binding on the seller's estate","Automatically void","Voidable by the buyer only","Converted into an option","A sales contract is not a personal services contract, so it survives death."],
+["CO","The parol evidence rule provides that:","A complete written contract cannot be contradicted by earlier oral agreements","All contracts must be oral","Evidence must be given under oath","Verbal offers must be presented","The written agreement is taken as the full agreement of the parties."],
+// ---------- Leasing and property management ----------
+["LE","A lease with a definite beginning and ending date is an:","Estate for years","Estate from period to period","Estate at will","Estate at sufferance","It ends automatically with no notice required."],
+["LE","A month-to-month tenancy is an:","Estate from period to period","Estate for years","Estate at sufferance","Estate at will","A periodic tenancy renews automatically until proper notice is given."],
+["LE","A tenant who stays after the lease expires without the landlord's consent holds an:","Estate at sufferance","Estate at will","Estate for years","Periodic estate","A holdover tenant entered lawfully but remains wrongfully."],
+["LE","In a gross lease, the tenant pays:","A fixed rent and the landlord pays the operating expenses","Rent plus taxes, insurance and maintenance","A share of sales","Rent tied to an index","Residential leases are usually gross leases."],
+["LE","A lease requiring the tenant to pay rent plus property taxes, insurance and maintenance is a:","Net lease","Gross lease","Percentage lease","Graduated lease","A triple net lease passes all three expense groups to the tenant."],
+["LE","Retail tenants commonly pay a base rent plus a share of gross sales under a:","Percentage lease","Net lease","Ground lease","Index lease","Percentage leases are typical in shopping centers."],
+["LE","When a tenant transfers all remaining rights under a lease to another person, it is:","An assignment","A sublease","A novation","A surrender","In a sublease the original tenant keeps some of the term or rights."],
+["LE","A landlord's failure to supply heat makes the unit unlivable and the tenant moves out. This is:","Constructive eviction","Actual eviction","Abandonment","Surrender","The tenant may leave and end the lease when the landlord's breach makes the premises unusable."],
+["LE","If leased property is sold during the lease term, the lease:","Remains binding on the new owner","Ends automatically","Converts to month to month","Must be renegotiated","A sale does not end a lease unless the lease says otherwise."],
+["LE","A property manager's primary duty to the owner is to:","Obtain the highest net return while protecting the asset","Keep rents as low as possible","Keep the building fully occupied at any rent","Reduce maintenance spending to zero","The manager is a fiduciary acting under a management agreement."],
+["LE","Under the Americans with Disabilities Act, places of public accommodation must:","Remove barriers where readily achievable","Be fully rebuilt to current code","Only post warning signs","Comply only if built after 2000","Title III covers commercial facilities and public accommodations."],
+["LE","Under the Fair Housing Act, a tenant with a disability who needs a ramp in a private rental may:","Make reasonable modifications at the tenant's own expense","Require the landlord to pay for it","Be refused permission","Be charged higher rent","The landlord may require restoration of the interior when it is reasonable."],
+// ---------- Transfer of title ----------
+["TT","For a deed to be valid, it must be signed by the:","Grantor","Grantee","Broker","Recorder","The grantor must be competent and must sign."],
+["TT","Title passes to the grantee when the deed is:","Delivered and accepted","Signed","Recorded","Notarized","Delivery must occur during the grantor's lifetime with intent to transfer."],
+["TT","The deed giving the grantee the greatest protection is the:","General warranty deed","Special warranty deed","Bargain and sale deed","Quitclaim deed","The grantor warrants title against all defects, including those arising before the grantor owned it."],
+["TT","A deed in which the grantor warrants only against defects arising during the grantor's ownership is a:","Special warranty deed","General warranty deed","Quitclaim deed","Sheriff's deed","Also called a limited warranty deed."],
+["TT","Which deed carries no warranties and is often used to clear a cloud on title?","Quitclaim deed","General warranty deed","Special warranty deed","Trustee's deed","It conveys only whatever interest the grantor may have."],
+["TT","The clause in a deed that defines the extent of ownership being transferred is the:","Habendum clause","Granting clause","Testimonium clause","Acknowledgment","It begins 'to have and to hold'."],
+["TT","The purpose of recording a deed is to:","Give constructive notice of the grantee's interest","Make the deed valid","Transfer title","Insure the title","A deed is valid between the parties without recording. Recording protects against later claimants."],
+["TT","Knowledge a person is presumed to have because the information is in the public record is:","Constructive notice","Actual notice","Implied consent","Inquiry warranty","Actual notice is what the person in fact knows."],
+["TT","Acquiring title by open, notorious, hostile and continuous possession for the statutory period is:","Adverse possession","Prescription","Accretion","Escheat","Prescription creates an easement. Adverse possession creates title."],
+["TT","A person who dies without a valid will dies:","Intestate","Testate","In probate","In severalty","Property then passes under the state's law of descent and distribution."],
+["TT","A gift of real property by will is a:","Devise","Bequest","Legacy","Descent","A bequest or legacy is a gift of personal property."],
+["TT","A history of all recorded documents affecting title, from the earliest record to the present, is:","A chain of title summarized in an abstract","A title insurance policy","A survey","A certificate of occupancy","An attorney examines the abstract and gives an opinion of title."],
+["TT","A standard owner's title insurance policy protects against:","Forged documents and incorrect marital statements","Zoning changes after closing","Defects known to the owner and not disclosed","Unrecorded claims revealed by a survey","Extended coverage adds unrecorded matters such as survey questions and parties in possession."],
+["TT","A lender's title insurance policy:","Decreases as the loan balance is paid down","Protects the owner's equity","Stays level for the life of the loan","Is paid annually","The owner's policy is for the purchase price and is paid once at closing."],
+["TT","A court action to settle competing claims and remove a cloud on title is a suit:","To quiet title","For partition","For specific performance","In foreclosure","Partition is used to divide co-owned property."],
+["TT","An item prorated at closing that the seller has already paid in advance results in a:","Credit to the seller and a debit to the buyer","Debit to the seller and a credit to the buyer","Credit to both","Debit to both","The buyer reimburses the seller for the prepaid portion."],
+["TT","Property taxes paid in arrears and not yet paid at closing are entered as a:","Debit to the seller and a credit to the buyer","Credit to the seller and a debit to the buyer","Debit to both parties","Credit to both parties","The seller owes for the time the seller owned the property."],
+["TT","The earnest money deposit appears on the closing statement as a:","Credit to the buyer","Debit to the buyer","Credit to the seller","Debit to the seller","It is money the buyer has already paid toward the price."],
+["TT","In the rectangular survey system, a section contains:","640 acres","160 acres","36 acres","43,560 acres","A section is one mile square. A township has 36 sections."],
+["TT","A township in the rectangular survey system is:","6 miles square and contains 36 sections","1 mile square and contains 640 acres","36 miles square","6 square miles","Six miles on each side gives 36 square miles."],
+["TT","A legal description that starts at a point of beginning and follows distances and directions around the parcel is:","Metes and bounds","Lot and block","Rectangular survey","Street address","It must return to the point of beginning."],
+["TT","Section 16 of each township was traditionally set aside for:","Schools","Roads","Churches","Railroads","Section 16 is known as the school section."],
+// ---------- Practice of real estate ----------
+["PR","The Civil Rights Act of 1866 prohibits discrimination based on:","Race, with no exceptions","Religion and sex","Familial status","Disability","Jones v. Mayer (1968) confirmed it applies to private as well as public discrimination."],
+["PR","Which are protected classes under the federal Fair Housing Act?","Race, color, religion, sex, national origin, disability, familial status","Race, age, marital status, occupation","Sexual orientation, age, source of income, race","Race, color, religion, marital status, age","Age and marital status are protected under ECOA, not the federal Fair Housing Act."],
+["PR","Which two classes were added to the Fair Housing Act in 1988?","Disability and familial status","Sex and religion","Race and color","Age and marital status","Sex was added in 1974."],
+["PR","Directing buyers toward or away from neighborhoods based on a protected class is:","Steering","Blockbusting","Redlining","Puffing","Steering limits housing choice."],
+["PR","Inducing owners to sell by claiming that members of a protected class are moving in is:","Blockbusting","Steering","Redlining","Commingling","Also called panic selling or panic peddling."],
+["PR","Familial status under the Fair Housing Act protects:","Households with children under 18 and pregnant women","Married couples only","Persons over 55","Unmarried partners","It also covers anyone securing legal custody of a child."],
+["PR","Housing may lawfully exclude children if it is:","Intended for persons 55 or older with at least 80% of units so occupied","Any apartment building with more than 20 units","Owned by a corporation","Located near a school","Housing for persons 62 or older where all residents are 62 or older is also exempt."],
+["PR","A complaint under the Fair Housing Act must be filed with HUD within:","1 year of the alleged violation","90 days","180 days","2 years","A private suit in federal court must be filed within two years."],
+["PR","The owner-occupant of a four-unit building may be exempt from the Fair Housing Act if:","No broker is used and no discriminatory advertising is used","The owner uses a broker","The tenants agree","The building is over 20 years old","The exemption never applies to race and never applies when a licensee is involved."],
+["PR","A landlord with a 'no pets' policy must allow a tenant's assistance animal because:","It is a reasonable accommodation for a person with a disability","Pets are a protected class","State law bans pet policies","The tenant offered a larger deposit","Assistance animals are not pets. Pet deposits and pet fees may not be charged for them."],
+["PR","Two competing brokers agree to charge the same commission rate. This is:","Price fixing","Market allocation","A tie-in arrangement","A group boycott","Price fixing violates the Sherman Antitrust Act."],
+["PR","Two brokers agree that one will work only the north side of town and the other the south side. This is:","Market allocation","Price fixing","Group boycott","Steering","Dividing markets among competitors is an antitrust violation."],
+["PR","Several brokers agree not to cooperate with a discount brokerage. This is:","A group boycott","Price fixing","Market allocation","A tying agreement","An agreement to refuse to deal with a competitor violates antitrust law."],
+["PR","Requiring a buyer to list the buyer's current home with the broker as a condition of buying a lot is:","A tie-in (tying) arrangement","Market allocation","Price fixing","Blockbusting","Conditioning one product or service on the purchase of another can violate antitrust law."],
+["PR","Mixing client funds with the broker's own business or personal funds is:","Commingling","Conversion","Subrogation","Novation","Using client funds for the broker's own purposes is conversion."],
+["PR","Under the national Do Not Call rules, a licensee may call a person on the registry if:","There is an established business relationship within the past 18 months","The call is made before 9 p.m.","The licensee belongs to a trade association","The person lives in the licensee's market area","A consumer inquiry allows calls for three months."],
+["PR","A salesperson classed as an independent contractor for federal tax purposes generally:","Is paid based on production rather than hours worked","Receives employee benefits","Has income tax withheld by the broker","Must work set hours","A written agreement, a license and pay tied to sales are the IRS tests."],
+["PR","The term REALTOR refers to:","A member of the National Association of REALTORS","Any licensed real estate agent","Any broker","Any property manager","It is a registered membership mark, not a license category."],
+["PR","An advertisement that does not identify the brokerage and makes it look as if a private party placed it is a:","Blind ad","Trigger ad","Puffing ad","Net listing","Blind ads are prohibited by license laws."],
+["PR","The CAN-SPAM Act requires commercial e-mail to include:","A working way for the recipient to opt out","The sender's license number","A disclosure of commission","The property's legal description","It also bans deceptive subject lines and requires a physical postal address."],
+["PR","Under the Fair Housing Act, new multifamily buildings with four or more units first occupied after March 13, 1991 must:","Meet accessibility design requirements","Provide parking for each unit","Reserve units for seniors","Be registered with HUD","Requirements include accessible routes, wide doors and usable kitchens and bathrooms."],
+["PR","Megan's Law concerns:","Public access to information about registered sex offenders","Lead-based paint","Flood insurance","Predatory lending","State law governs what, if anything, a licensee must disclose."],
+["PR","An ad reading 'perfect for a young Christian couple' most likely violates the Fair Housing Act because it:","States a preference based on religion and familial status","Uses puffing","Lacks the equal housing logo","Omits the price","Advertising may not show a preference or limitation based on a protected class."],
+["PR","A tester posing as a buyer to check for discrimination is:","Legal, and testers have standing to sue","Entrapment and illegal","Legal only with a warrant","Legal only for HUD employees","The Supreme Court has recognized tester standing."],
+// ---------- Calculations (fixed items; the Math Drill mode generates more) ----------
+["MA","How many square feet are in one acre?","43,560","5,280","40,000","4,840","Memorize it: 43,560 square feet."],
+["MA","A lot measures 150 feet by 290.4 feet. How many acres is it?","1 acre","0.5 acre","1.5 acres","2 acres","150 x 290.4 = 43,560 sq ft = 1 acre."],
+["MA","How many acres are in the NW 1/4 of the SE 1/4 of a section?","40","160","80","10","640 x 1/4 x 1/4 = 40 acres."],
+["MA","How many acres are in the S 1/2 of the NE 1/4 of the NW 1/4 of a section?","20","40","80","10","640 x 1/4 x 1/4 x 1/2 = 20 acres."],
+["MA","A home sells for $320,000. The commission is 5%, and the listing broker keeps 50% of it. The listing agent gets 60% of the listing broker's share. What does the agent earn?","$4,800","$9,600","$8,000","$3,200","$320,000 x 5% = $16,000. Half = $8,000. 60% of $8,000 = $4,800."],
+["MA","A seller wants to net $200,000 after paying a 6% commission. What must the sale price be, to the nearest dollar?","$212,766","$212,000","$206,000","$188,000","Net / (1 - rate) = $200,000 / 0.94 = $212,766."],
+["MA","A property produces net operating income of $48,000 and sells at an 8% capitalization rate. What is its value?","$600,000","$384,000","$480,000","$3,840","Value = income / rate = $48,000 / 0.08."],
+["MA","A building bought for $500,000 has net operating income of $35,000. What is the capitalization rate?","7%","14.3%","3.5%","5%","Rate = income / value = $35,000 / $500,000."],
+["MA","A buyer obtains a $240,000 loan and pays 2 discount points. What do the points cost?","$4,800","$2,400","$480","$6,000","$240,000 x 2% = $4,800."],
+["MA","A property with a market value of $300,000 is assessed at 40% of value. The tax rate is 25 mills. What is the annual tax?","$3,000","$7,500","$1,200","$12,000","$300,000 x 40% = $120,000. $120,000 x 0.025 = $3,000."],
+["MA","A buyer makes a 20% down payment on a $275,000 home. What is the loan amount?","$220,000","$55,000","$255,000","$247,500","$275,000 x 80% = $220,000."],
+["MA","A loan of $180,000 carries 6% annual interest. What is the interest for the first month?","$900","$10,800","$1,080","$450","$180,000 x 6% = $10,800 per year. Divide by 12."],
+["MA","A house rents for $1,500 per month and sold for $180,000. What is the gross rent multiplier?","120","10","12","83","GRM = price / monthly rent = $180,000 / $1,500."],
+["MA","A home bought for $200,000 sells for $230,000. What is the percentage of profit?","15%","13%","30%","11.5%","Profit / original cost = $30,000 / $200,000."],
+["MA","Annual taxes of $3,600 are paid in arrears. Closing is on April 30 using a 30-day month and 360-day year, with the seller responsible through the day of closing. What does the seller owe?","$1,200","$2,400","$900","$1,500","$3,600 / 12 = $300 per month x 4 months."],
+["MA","A room measures 12 feet by 15 feet. How many square yards of carpet are needed?","20","180","60","27","180 sq ft / 9 = 20 sq yd."],
+];
+
+// Format: [topic, question, CORRECT answer, wrong, wrong, wrong, explanation]. Options are shuffled at runtime.
+const ILLINOIS = [
+// ---------- Licensing requirements ----------
+["LIC","Which agency licenses and regulates real estate professionals in Illinois?","Illinois Department of Financial and Professional Regulation (IDFPR)","Illinois Real Estate Commission","Illinois Department of Human Rights","Illinois Association of REALTORS","IDFPR's Division of Real Estate administers the Real Estate License Act of 2000."],
+["LIC","The entry-level real estate license in Illinois is the:","Broker license","Salesperson license","Managing broker license","Associate broker license","Illinois eliminated the salesperson license. New licensees are brokers who must work under a sponsoring broker."],
+["LIC","What is the minimum age for an Illinois broker license?","18","19","21","20","A broker applicant must be at least 18 with a high school diploma or equivalent."],
+["LIC","How many hours of pre-license education must a broker applicant complete?","75 hours","45 hours","90 hours","120 hours","60 hours of broker pre-license topics plus a 15-hour interactive applied real estate principles course."],
+["LIC","Of the 75 hours of broker pre-license education, how many must be an interactive applied real estate principles course?","15 hours","30 hours","45 hours","6 hours","The 15 interactive hours may be in a classroom or by live interactive webinar."],
+["LIC","Who administers the Illinois real estate licensing examination?","PSI","Pearson VUE","IDFPR staff directly","Illinois REALTORS","PSI delivers the exam on behalf of IDFPR."],
+["LIC","The Illinois broker examination consists of:","100 national questions and 40 state questions","80 national questions and 40 state questions","100 national questions and 50 state questions","140 state questions","The national portion allows 150 minutes and the state portion 90 minutes."],
+["LIC","What score is needed to pass the Illinois state portion of the broker exam?","75%","70%","80%","65%","30 of 40 correct. The portions are scored separately and both must be passed."],
+["LIC","After passing the exam, an applicant must apply for the license within:","1 year","90 days","6 months","2 years","If the application is not made within one year, the exam must be retaken."],
+["LIC","An applicant who fails the licensing exam four times must:","Repeat the pre-license education before testing again","Wait five years","Petition the Board for a waiver","Take the managing broker exam instead","After four failed attempts the education must be completed again."],
+["LIC","A newly licensed broker's first renewal requires:","45 hours of post-license education","12 hours of continuing education","24 hours of continuing education","No education","Post-license education is three 15-hour courses, each with a 50-question exam, completed before the first renewal."],
+["LIC","Illinois broker licenses expire on:","April 30 of even-numbered years","April 30 of odd-numbered years","December 31 of every year","The licensee's birthday","Managing broker licenses expire April 30 of odd-numbered years."],
+["LIC","Illinois managing broker licenses expire on:","April 30 of odd-numbered years","April 30 of even-numbered years","July 31 of even-numbered years","October 31 of every year","Brokers renew in even-numbered years and managing brokers in odd-numbered years."],
+["LIC","After the first renewal, how many hours of continuing education must a broker complete each two-year term?","12 hours","6 hours","24 hours","45 hours","6 hours of core curriculum plus 6 hours of electives."],
+["LIC","The broker core continuing education requirement is:","6 hours, including 2 hours of fair housing","4 hours with no fair housing requirement","12 hours of fair housing","3 hours of ethics","The core rose from 4 to 6 hours with 2 hours of fair housing under the 2025 amendments."],
+["LIC","Every license renewal requires training of at least one hour in:","Sexual harassment prevention","Commercial leasing","Appraisal standards","Property management","Sexual harassment prevention training is required each renewal period and may be part of elective or post-license hours."],
+["LIC","A managing broker must complete how many total hours of continuing education each renewal period?","24 hours","12 hours","18 hours","45 hours","12 hours of regular continuing education plus a 12-hour broker management course."],
+["LIC","To qualify for a managing broker license, an applicant must be at least 20 years old and have:","Been licensed as a broker for 2 of the last 3 years","Been licensed as a broker for 5 years","Closed at least 25 transactions","A college degree","The applicant must also complete 45 hours of managing broker education and pass the exam."],
+["LIC","How many additional hours of pre-license education must a managing broker applicant complete?","45 hours","15 hours","75 hours","90 hours","30 hours of managing broker topics plus 15 interactive hours."],
+["LIC","How many hours of education are required for a residential leasing agent license?","15 hours","30 hours","45 hours","75 hours","A leasing agent may engage only in residential leasing activities."],
+["LIC","A person may engage in residential leasing activities without a license while pursuing a leasing agent license for up to:","120 consecutive days under a sponsoring broker's supervision","30 days","One year","There is no such permit","The sponsoring broker must notify IDFPR, and the education and exam must be completed in that period."],
+["LIC","A residential leasing agent may:","Show and lease residential rental property","List homes for sale","Negotiate commercial leases","Sell vacant land","The leasing agent license is limited to residential leasing."],
+["LIC","Which person needs a real estate license in Illinois?","A person who negotiates the sale of another's property for a fee","An owner selling her own home","An attorney-in-fact acting under a recorded power of attorney","A court-appointed receiver","Acting for another and for compensation in a real estate transaction requires a license."],
+["LIC","An Illinois attorney who wants a broker license:","Is exempt from the pre-license education but must pass the exam","Is exempt from the exam","Needs no license to list property for a commission","Must complete 150 hours of education","Attorneys admitted to practice in Illinois are exempt from the education requirements."],
+["LIC","A licensee whose sponsorship is ended by the sponsoring broker:","Holds an inactive license until sponsored by another sponsoring broker","May keep practicing for 30 days","Has a revoked license","Becomes self-sponsored automatically","A broker cannot practice unless sponsored."],
+["LIC","A broker in Illinois may be sponsored by:","Only one sponsoring broker at a time","Up to two sponsoring brokers","Any number of sponsoring brokers","A sponsoring broker and a leasing agent jointly","A licensee may practice only under one sponsoring broker."],
+["LIC","A broker licensed in another state who wants an Illinois license now applies through:","Licensure by endorsement, with an Illinois-specific course and exam","Automatic reciprocity with all states","A temporary 90-day permit only","The national portion of the exam only","The 2025 amendments replaced reciprocal agreements with an endorsement path that includes a 30-hour course and the state exam."],
+["LIC","A licensee whose address or e-mail address of record changes must notify IDFPR within:","24 hours","10 days","30 days","60 days","Licensees must keep a current address and e-mail address of record with the Department."],
+["LIC","A license that has been expired for less than two years may be:","Renewed by paying the fees and completing the required education","Renewed only by retaking the exam","Never renewed","Transferred to another person","After two years the person must generally meet the requirements for a new license."],
+["LIC","Which activity may an unlicensed assistant perform?","Placing a sign on a listed property","Hosting an open house alone","Negotiating commission with a seller","Explaining contract terms to a buyer","Unlicensed assistants may do clerical work. They may not show property, negotiate or interpret documents."],
+["LIC","A business entity that holds a sponsoring broker license must have:","A designated managing broker for each office","At least five sponsored brokers","A physical office in Cook County","An attorney on staff","Every office must be supervised by a managing broker."],
+["LIC","How many hours of continuing education must a residential leasing agent complete each two-year renewal period?","8 hours","6 hours","12 hours","15 hours","Leasing agents complete 8 hours of core curriculum each renewal."],
+// ---------- Agency and brokerage agreements (License Act, Article 15) ----------
+["AGY","Under the Illinois License Act, a licensee is presumed to represent:","The consumer with whom the licensee is working, as a designated agent","The seller in every transaction","Both parties as a dual agent","No one, as a transaction broker","The presumption applies unless there is a written agreement saying otherwise or the licensee performs only ministerial acts."],
+["AGY","Designated agency means that:","The sponsoring broker names specific licensees as the legal agents of a client, to the exclusion of other licensees in the firm","Every licensee in the firm represents every client","The managing broker is always a dual agent","The buyer and seller share one agent","Designated agency lets two licensees in one firm represent opposite sides without dual agency."],
+["AGY","Since January 1, 2025, a brokerage agreement in Illinois must be:","In writing","Oral or written","Recorded with the county","Approved by IDFPR","The 2025 amendments changed the definition of brokerage agreement to require a written agreement."],
+["AGY","Under Illinois rules, a written brokerage agreement with a buyer must be in place no later than:","Before showing or touring properties with the buyer","The closing date","Seven days after the first offer","The end of the attorney review period","A written agreement is needed before the licensee acts as the buyer's designated agent."],
+["AGY","Which of the following is a ministerial act?","Giving a caller the price and address of a listing","Advising a buyer how much to offer","Negotiating repairs for a buyer","Recommending that a seller reject an offer","Ministerial acts are informative or clerical and do not create an agency relationship."],
+["AGY","Dual agency is permitted in Illinois only if:","Both clients give informed written consent","The managing broker approves orally","The commission is reduced","The property is commercial","The licensee must use the statutory disclosure and obtain written consent from both parties."],
+["AGY","A buyer client refuses to consent to dual agency on a property the licensee has listed. The licensee should:","Not act as a dual agent and refer one party to another designated agent","Proceed because the seller consented","Represent only the party paying the commission","Cancel the listing","Without consent from both clients the licensee cannot act as a dual agent."],
+["AGY","A licensee may NOT act as a dual agent when:","The licensee has an ownership interest in the property","The price exceeds $1 million","The buyer is paying cash","The property is vacant land","The Act bars dual agency in a transaction where the licensee or an entity the licensee owns is a party."],
+["AGY","Which may a dual agent disclose without specific permission?","Material latent defects in the property","The lowest price the seller will accept","The highest price the buyer will pay","A client's motivation for moving","Confidential pricing and motivation cannot be disclosed, but known latent material defects must be."],
+["AGY","A client's confidential information must be kept confidential:","Even after the brokerage relationship ends","Only until closing","For one year after closing","Only while the listing is active","Confidentiality survives termination unless the client permits disclosure or the law requires it."],
+["AGY","A licensee owes a customer (a non-client):","Honesty, fair dealing and disclosure of known latent material defects","Full fiduciary duties","Confidentiality about price","Advice on the offer amount","Customers are not represented but must be treated honestly."],
+["AGY","In Illinois, offering cooperation through the multiple listing service:","Does not create subagency","Automatically makes the cooperating broker a subagent of the seller","Creates dual agency","Requires IDFPR approval","Illinois law does not presume subagency. Cooperating licensees usually represent the buyer."],
+["AGY","A sponsoring broker's office policy on agency must be:","In writing and available to consumers on request","Filed with the county recorder","Kept confidential from consumers","Approved by the local association","The written policy states the types of agency relationships the firm offers."],
+["AGY","Under an exclusive brokerage agreement, the minimum services a sponsoring broker must provide through a sponsored licensee include:","Accepting and presenting offers, helping negotiate them, and answering the client's questions about them","Paying for all advertising","Guaranteeing a sale within 90 days","Holding weekly open houses","These minimum services cannot be waived in an exclusive agreement."],
+["AGY","An exclusive brokerage agreement in Illinois must contain:","A definite termination date with no automatic extension","An automatic renewal clause","A net listing clause","A clause waiving the minimum services","Automatic extension or renewal clauses are prohibited."],
+["AGY","Net listings in Illinois are:","Legal but discouraged","Required for vacant land","Always a criminal offense","The standard form of listing","Net listings create a conflict between the broker's and the seller's interests."],
+["AGY","A licensee receives two offers on a listing on the same day. The licensee must:","Present both offers to the seller promptly","Present the higher offer first and hold the other","Present only the offer from the licensee's own buyer","Wait for the managing broker to choose","All offers must be presented in a timely way unless the client has directed otherwise in writing."],
+["AGY","Illinois agency duties under Article 15 of the License Act:","Replace common law fiduciary duties","Add to common law fiduciary duties","Apply only to commercial transactions","Apply only to managing brokers","The statute states that it supersedes the common law of agency for licensees."],
+["AGY","A designated agent's duties to a client include all of the following EXCEPT:","Guaranteeing the property's future value","Exercising reasonable skill and care","Obeying the client's lawful directions","Accounting for money and property received","Statutory duties are performing the agreement, promoting the client's interests, care, confidentiality, obedience to lawful directions and accounting."],
+["AGY","A licensee showing a buyer client properties other licensees are also showing to competing buyers:","Does not breach a duty to the client","Has created undisclosed dual agency","Must stop working with the other buyers","Must get written consent from every seller","The Act says showing the same properties to several buyer clients is not a breach."],
+["AGY","A seller's designated agent may show buyers competing properties listed with the same firm:","Without breaching any duty to the seller","Only with the seller's written consent","Only if the commission is the same","Never","The Act allows a licensee to show alternative properties and to list competing properties."],
+// ---------- License Act business practices ----------
+["ACT","A sponsored broker may accept compensation for licensed activities only from:","The licensee's sponsoring broker","The seller directly","The buyer directly","The cooperating brokerage","All compensation must be paid through the sponsoring broker."],
+["ACT","Who may sue a client to collect an unpaid commission?","The sponsoring broker","The sponsored broker who procured the sale","Any licensee in the office","An unlicensed assistant","A sponsored licensee can look only to the sponsoring broker for payment."],
+["ACT","The relationship between a sponsoring broker and each sponsored licensee must be covered by:","A written employment or independent contractor agreement","An oral understanding","A recorded contract","A surety bond","The agreement addresses supervision, duties, compensation and termination."],
+["ACT","A sponsoring broker who accepts escrow money must deposit it in the escrow account no later than:","The next business day after the transaction","The same day in all cases","Three business days after receipt","Five calendar days after acceptance","A transaction exists when the contract has been accepted or the lease agreed to."],
+["ACT","Depositing earnest money into the broker's general operating account is:","Commingling","Conversion only","Permitted if the amount is small","Permitted with oral consent","Escrow money must be kept separate from the broker's business and personal funds."],
+["ACT","A sponsoring broker's escrow records must be kept for:","5 years","2 years","3 years","7 years","Records for the most recent two years must be kept at the office and produced within 24 hours of a Department request."],
+["ACT","A sponsoring broker must reconcile each escrow account:","Monthly","Quarterly","Annually","Only when audited","Monthly reconciliation is required after the bank statement is received."],
+["ACT","A buyer and a seller both claim the earnest money after a failed contract. The sponsoring broker should:","Hold the money until there is written direction from both parties or a court order","Give it to the seller","Return it to the buyer","Keep it as commission","The broker may not decide the dispute. Interpleader is one option."],
+["ACT","An escrow account may earn interest:","Only if all parties to the transaction agree in writing on who receives it","Whenever the broker chooses","Never","Only for commercial transactions","Without written direction the account must be non-interest bearing."],
+["ACT","A sponsoring broker may keep its own money in the escrow account:","Only in the amount needed to cover bank service charges or a minimum balance","In any amount","Never","Up to the amount of pending commissions","A limited amount of the broker's own money for bank requirements is not commingling."],
+["ACT","All real estate advertising by a licensee must include:","The sponsoring broker's business name","The licensee's home address","The commission rate","The managing broker's license number","An advertisement that hides the brokerage is a prohibited blind ad."],
+["ACT","A licensee advertising her own home for sale must:","Disclose in the advertisement that she is a licensee","List it with another firm","Wait until the license is inactive","Do nothing different from any other owner","Terms such as 'broker owned' or 'agent owned' satisfy the rule."],
+["ACT","Before placing a 'For Sale' sign on a property, a licensee must have:","The owner's written consent","The neighbors' consent","A municipal permit in every case","IDFPR approval","Advertising property or placing signs without written consent is a violation."],
+["ACT","In an advertisement that includes a team name, the sponsoring broker's name must be:","At least equal in size to or larger than the team name","Left out","Half the size of the team name","Shown only on the back","Team names may not suggest the team is a separate brokerage."],
+["ACT","A licensee may pay a referral fee to:","Another licensee, through the sponsoring brokers","Any friend who sends a buyer","An unlicensed assistant who finds a listing","A tenant in exchange for finding a home buyer","Paying compensation to an unlicensed person for licensed activity is prohibited."],
+["ACT","Under the 2025 amendments, licensees must disclose to clients:","The sponsoring broker's compensation and its policy on compensating cooperating brokers","Only the listing price","The licensee's net income","Nothing about compensation","Brokers on both sides must disclose what they charge their own clients and any amount paid to cooperating brokers."],
+["ACT","A licensee who is paid by more than one party in a transaction must:","Disclose it to all parties and have their consent","Keep it confidential","Report it only to the managing broker","Return the smaller payment","Undisclosed compensation from multiple parties is a ground for discipline."],
+["ACT","Who is responsible for supervising a sponsored broker's licensed activities?","The managing broker","The local association","IDFPR","The broker alone","The sponsoring broker acts through its designated managing broker."],
+["ACT","A sponsoring broker must have:","A written company policy covering matters such as agency, supervision and fair housing","A minimum of three branch offices","A bond of $100,000","A paid errors and omissions policy for each client","Written office policies are required by the Act and rules."],
+["ACT","A broker price opinion or comparative market analysis may be prepared by:","A broker or managing broker","A residential leasing agent","An unlicensed assistant","Only a certified appraiser","It may not be called an appraisal and may not be used as the basis for originating a loan on a primary residence."],
+["ACT","In Illinois, a real estate licensee who is not an attorney may:","Fill in the blanks on a standard form contract","Draft a deed","Prepare a custom contract from scratch","Give legal opinions on title","Drafting legal documents is the practice of law."],
+["ACT","A licensee offers a gift card to anyone who lists with her. The offer must:","Disclose any conditions or limitations","Be approved by IDFPR","Be limited to $25","Not be made at all","Inducements are allowed if they are not misleading and the conditions are disclosed."],
+["ACT","A licensee wants to list a property already under an exclusive listing with another firm. The licensee:","May not induce the owner to breach the existing agreement","May solicit the owner freely","May list it if the commission is lower","May list it with the managing broker's oral approval","Inducing a party to break an existing brokerage agreement is prohibited."],
+["ACT","A guaranteed sales plan offered by a sponsoring broker must:","Have its terms and conditions provided in writing","Be oral only","Be offered to every seller","Be registered with the county","The details of the guarantee, including price and conditions, must be given in writing."],
+["ACT","A licensee buying a property for herself must:","Disclose in writing that she is a licensee","Use another brokerage","Pay full list price","Waive her commission","A licensee's interest in a transaction must be disclosed in writing."],
+["ACT","A virtual office for a sponsoring broker is:","Permitted if records and supervision requirements are met","Prohibited","Allowed only for leasing agents","Allowed only outside Cook County","The Act authorizes virtual offices."],
+// ---------- Discipline and recovery fund ----------
+["DSC","The maximum civil fine IDFPR may impose on a licensee for each violation of the License Act is:","$25,000","$10,000","$5,000","$50,000","Fines are in addition to other discipline such as suspension or revocation."],
+["DSC","Practicing real estate without a license is, for a first offense, a:","Class A misdemeanor","Petty offense","Class 4 felony","Class X felony","A second or later offense is a Class 4 felony. A civil penalty of up to $25,000 per offense may also be imposed."],
+["DSC","A second offense of practicing real estate without a license is a:","Class 4 felony","Class A misdemeanor","Business offense","Class 1 felony","The first offense is a Class A misdemeanor."],
+["DSC","The purpose of the Real Estate Recovery Fund is to:","Compensate consumers who suffer actual monetary loss caused by a licensee's violation","Pay licensees' unpaid commissions","Fund continuing education","Cover brokers' office expenses","An aggrieved person must first obtain a court judgment and be unable to collect it."],
+["DSC","Under current rules, the most one aggrieved person may recover from the Real Estate Recovery Fund for a single act is:","$50,000","$10,000","$25,000","$100,000","The amount is set by rule and includes costs and attorney's fees."],
+["DSC","When money is paid from the Recovery Fund because of a licensee's act, the licensee's license is:","Automatically revoked","Unaffected","Suspended for 30 days","Placed on probation","The license cannot be restored until the fund is repaid in full with interest."],
+["DSC","An action that may lead to a claim on the Recovery Fund must be started within:","2 years after the aggrieved person knew or should have known of the violation","6 months","5 years","10 years","Failure to follow the Act's procedures waives the claim."],
+["DSC","IDFPR generally may not take disciplinary action more than how long after the violation?","5 years","1 year","2 years","10 years","The Act contains a five-year limit on disciplinary actions."],
+["DSC","Before a disciplinary hearing, the licensee must be given written notice at least:","30 days before the hearing","5 days before the hearing","10 days before the hearing","90 days before the hearing","The licensee is directed to file a written answer within 20 days."],
+["DSC","Final authority to discipline a licensee rests with the:","Secretary of IDFPR","Real Estate Administration and Disciplinary Board","Governor","Local association of REALTORS","The Board makes recommendations to the Secretary."],
+["DSC","A final disciplinary order may be appealed by seeking:","Judicial review in circuit court under the Administrative Review Law","A hearing before the Governor","Review by the local association","Arbitration with PSI","Administrative decisions are reviewed by the courts."],
+["DSC","Which of the following is a ground for discipline?","Failing to account for or remit money belonging to others","Charging a commission above 6%","Representing only buyers","Working part time","Mishandling funds is one of the most serious violations."],
+["DSC","IDFPR may refuse to renew a license if the licensee:","Has failed to file a tax return or pay taxes owed to the Illinois Department of Revenue","Belongs to more than one MLS","Works from a home office","Earned less than a set amount","Unpaid state taxes and delinquent child support can block licensure."],
+["DSC","A licensee convicted of a felony must report it to IDFPR within:","30 days","24 hours","90 days","The next renewal","Failure to report a conviction is itself a violation."],
+["DSC","Under the 2025 amendments, a fine imposed by citation must be paid within:","30 days","60 days","90 days","10 days","The payment period was shortened from 60 days to 30 days."],
+["DSC","A licensee who lets an unlicensed person use the license to run a brokerage business:","Has committed a violation of the License Act","Is acting lawfully if supervised","Is acting lawfully if the person is a relative","Needs only the managing broker's consent","Lending a license without actual participation and control is prohibited."],
+["DSC","Records requested by IDFPR from the most recent two years must be produced within:","24 hours","10 days","30 days","48 hours","Older records stored off site must also be made available."],
+["DSC","Which is NOT a disciplinary action available to IDFPR?","Imprisonment","Revocation","Suspension","Reprimand","Criminal penalties are imposed by the courts, not by the Department."],
+// ---------- Disclosures ----------
+["DIS","The Illinois Residential Real Property Disclosure Act applies to sales of residential property with:","1 to 4 dwelling units","Any number of units","5 or more units","Single-family homes only","It also covers condominiums and cooperatives, installment contracts and some options."],
+["DIS","The Residential Real Property Disclosure Report must be delivered to the buyer:","Before the contract is signed","At closing","Within 10 days after closing","Only if the buyer asks for it","Delivery before the buyer signs is what the Act requires."],
+["DIS","If a disclosure report showing a material defect is delivered after the contract is accepted, the buyer may terminate within:","3 business days after receipt","24 hours","10 calendar days","30 days","The right to terminate ends at closing."],
+["DIS","The Residential Real Property Disclosure Report is based on the seller's:","Actual knowledge","Professional inspection","Agent's opinion","Appraisal","The seller is not required to investigate or hire an inspector."],
+["DIS","The Residential Real Property Disclosure Report is:","Not a warranty by the seller","A warranty of the home's condition","A substitute for a home inspection","Part of the deed","The form states that it is not a warranty and that buyers may obtain inspections."],
+["DIS","Which transfer is exempt from the Residential Real Property Disclosure Act?","A transfer by court order, such as in probate","A sale by an owner who lived in the home for 20 years","A sale of a condominium unit","A sale under an installment contract","Other exemptions include foreclosure, transfers between co-owners, transfers to a spouse and new homes never occupied."],
+["DIS","A seller learns of a new defect after delivering the disclosure report but before closing. The seller must:","Supplement the disclosure in writing","Do nothing","Cancel the contract","Reduce the price by the repair cost","The seller must update the report if it becomes inaccurate before closing."],
+["DIS","A buyer's lawsuit under the Residential Real Property Disclosure Act must be filed within:","1 year from the earlier of possession, occupancy or recording","6 months from closing","5 years from discovery","10 years from the contract date","A seller who knowingly makes a false statement is liable for actual damages and costs."],
+["DIS","Under the Illinois Radon Awareness Act, a seller of residential property must:","Give the buyer the radon pamphlet and a radon disclosure form before the buyer is bound","Test for radon before listing","Install a mitigation system","Guarantee radon levels below 4 pCi/L","The Act requires disclosure. It does not require testing or mitigation."],
+["DIS","Which property is exempt from the Illinois Radon Awareness Act disclosure?","A condominium unit on the third story or higher","A single-family home","A two-flat","A ranch home with a basement","Units on the third story or higher above ground level are exempt."],
+["DIS","Illinois law requires a carbon monoxide alarm within how many feet of every room used for sleeping?","15 feet","10 feet","25 feet","50 feet","This applies to dwellings that use fossil fuel or have an attached garage."],
+["DIS","Under the Illinois License Act, a licensee has no duty to disclose that:","A prior occupant had HIV or that a death or crime occurred on the property with no physical effect on it","The basement leaks","The foundation is cracked","The roof needs replacement","No cause of action arises for not disclosing facts that have no physical effect on the property."],
+["DIS","A listing agent knows the furnace is cracked and dangerous. The seller says not to mention it. The agent must:","Disclose the latent material defect to prospective buyers","Stay silent out of loyalty","Disclose only if asked directly","Withdraw the listing without comment","Licensees must disclose known latent material defects to customers."],
+["DIS","Under the Illinois License Act, a licensee is not liable for false information given by a client unless the licensee:","Knew the information was false","Is the listing agent","Was paid a commission","Is a managing broker","A licensee may rely on a client's statements unless the licensee knows they are false."],
+["DIS","A designated agent's name must be disclosed to the client:","In writing","Orally at closing","Only if the client asks","In the MLS only","The sponsoring broker designates the agent, and the client is told in writing."],
+["DIS","A licensee working with a buyer as a customer must tell the buyer in writing that the licensee:","Does not represent the buyer","Is a dual agent","Represents both parties","Has no duties to anyone","The notice of no agency must come early enough to keep the customer from revealing confidential information."],
+["DIS","Dual agency disclosure and consent must be obtained:","Before the licensee acts as a dual agent","At closing","After the offer is accepted","Within 30 days after closing","Both clients must give informed written consent first."],
+["DIS","An Illinois licensee must disclose an interest in a property the licensee is selling:","In writing to the other party","Only if asked","Only to the lender","Only on the closing statement","This includes property owned by the licensee or by an entity the licensee has an interest in."],
+["DIS","A licensee refers a client to a title company in which the licensee has a financial interest. The licensee must:","Disclose the interest to the client","Keep it private","Refuse to make the referral","Charge a separate fee","Affiliated business interests must be disclosed."],
+["DIS","The Residential Real Property Disclosure Report asks the seller about:","Awareness of problems such as flooding, structural defects, radon and unsafe lead conditions","The seller's reason for moving","The purchase price the seller paid","The seller's mortgage balance","The form asks about the seller's awareness of listed conditions."],
+["DIS","For a pre-1978 home in Illinois, lead-based paint disclosure records must be kept by the brokerage for:","5 years under the Illinois License Act","1 year","3 years only","10 years","Federal law requires three years, but Illinois transaction records must be kept five years."],
+["DIS","The Illinois disclosure report must be completed by:","The seller","The listing agent","The buyer's inspector","The attorney","A licensee should not complete the report for the seller."],
+["DIS","A seller of a unit in an Illinois condominium must, on the buyer's request, provide:","Association documents such as the declaration, bylaws, rules and a statement of assessments and reserves","Only the deed","The names of all unit owners","The developer's original plans","These are the resale disclosures under Section 22.1 of the Condominium Property Act."],
+["DIS","An Illinois time-share purchaser may cancel the purchase contract within:","5 calendar days","24 hours","3 business days","30 days","The Illinois Real Estate Timeshare Act gives a five-day rescission right."],
+// ---------- Additional Illinois laws ----------
+["LAW","Which is a protected class in real estate transactions under the Illinois Human Rights Act but not under the federal Fair Housing Act?","Source of income","Race","Religion","National origin","Source of income became protected in Illinois real estate transactions on January 1, 2023."],
+["LAW","Immigration status became a protected class in Illinois real estate transactions on:","January 1, 2024","January 1, 2020","January 1, 2016","It is not protected","The Illinois Human Rights Act was amended to add it."],
+["LAW","Under the Illinois Human Rights Act, a landlord may not refuse to rent to an applicant because the applicant:","Pays rent with a housing choice voucher","Has an income too low to pay the rent from any source","Has damaged prior rentals","Refuses to sign the lease","A voucher is a lawful source of income. Neutral screening standards are still allowed."],
+["LAW","Which of these is protected in Illinois real estate transactions under the Illinois Human Rights Act?","Order of protection status","Occupation","Credit score","Political party","Illinois also protects ancestry, age (40 and over), marital status, military status, sexual orientation, arrest record and others."],
+["LAW","A housing discrimination charge under the Illinois Human Rights Act is filed with the:","Illinois Department of Human Rights","Illinois Department of Financial and Professional Regulation","County recorder","Illinois Attorney Registration Commission","The Department of Human Rights investigates. The Human Rights Commission decides cases."],
+["LAW","A housing discrimination charge must be filed with the Illinois Department of Human Rights within:","1 year of the alleged violation","90 days","6 months","5 years","The one-year period for housing charges matches the federal HUD deadline."],
+["LAW","Under the Illinois Human Rights Act, 'age' as a protected class means persons:","40 years of age or older","Over 62","Under 18","Over 55","Familial status separately protects households with children under 18."],
+["LAW","In Illinois, the time required to gain title by adverse possession is generally:","20 years","5 years","10 years","30 years","A seven-year period applies with color of title and payment of taxes."],
+["LAW","In Illinois, tenancy by the entirety is available to:","Married couples for their homestead (principal residence)","Any two co-owners","Business partners","Parents and adult children","It protects the home from the creditors of only one spouse."],
+["LAW","When a deed to two or more people in Illinois does not state the form of ownership, they take title as:","Tenants in common","Joint tenants","Tenants by the entirety","Community property owners","Joint tenancy must be expressly declared."],
+["LAW","The Illinois homestead exemption protects how much of an individual's equity in a residence from most creditors?","$15,000","$5,000","$50,000","$100,000","Two owners, such as spouses, may claim a combined $30,000."],
+["LAW","Dower and curtesy in Illinois are:","Abolished","Still in force for all married couples","Available only to widows","Available only by written agreement","Illinois abolished dower and curtesy in 1972. It is not a community property state."],
+["LAW","The Illinois state real estate transfer tax is:","$0.50 per $500 of the sale price","$1.00 per $500","$0.25 per $500","$5.00 per $1,000","Counties add $0.25 per $500, and some municipalities add their own tax."],
+["LAW","The county real estate transfer tax in Illinois is:","$0.25 per $500 of the sale price","$0.50 per $500","$1.00 per $1,000","$2.00 per $500","Combined with the state tax, the total is $0.75 per $500, or $1.50 per $1,000."],
+["LAW","A home sells for $200,000 in an Illinois town with no municipal transfer tax. What is the total state and county transfer tax?","$300","$150","$200","$600","State: 400 x $0.50 = $200. County: 400 x $0.25 = $100."],
+["LAW","Outside Cook County, real property in Illinois is generally assessed at:","33 1/3% of fair market value","10% of fair market value","50% of fair market value","100% of fair market value","Cook County classifies property and assesses residential property at 10%."],
+["LAW","In Illinois, the factor applied to assessed values so that assessments are uniform among counties is the:","Equalization factor (multiplier)","Mill rate","Capitalization rate","Homestead rate","The Department of Revenue assigns each county an equalization factor."],
+["LAW","Illinois general real estate taxes are:","Paid in arrears, in the year after they are levied","Paid in advance","Paid monthly to the state","Paid only when the property is sold","Sellers therefore usually give buyers a credit for unpaid taxes at closing."],
+["LAW","Outside Cook County, Illinois property tax installments are generally due:","June 1 and September 1","January 1 and July 1","April 15 and October 15","March 1 and August 1","Cook County bills on its own schedule, with a first installment due in March."],
+["LAW","Illinois is generally described as a:","Lien theory state","Title theory state","Community property state","Deed of trust state","The mortgagor keeps title and the mortgage is a lien. Mortgages are the usual security instrument."],
+["LAW","Mortgage foreclosures in Illinois are:","Judicial, through a court proceeding","Non-judicial under a power of sale","Handled by IDFPR","Handled by the county assessor","Illinois does not allow power-of-sale foreclosure."],
+["LAW","In an Illinois residential foreclosure, the mortgagor's redemption period ends on the later of:","7 months after service of summons or 3 months after judgment","30 days after sale or 60 days after judgment","1 year after sale or 6 months after judgment","90 days after default or 30 days after notice","The redemption right is exercised before the judicial sale."],
+["LAW","In an Illinois residential foreclosure, the mortgagor may reinstate the loan by curing the default within:","90 days after service of summons","30 days after default","7 months after judgment","1 year after sale","Reinstatement means paying the missed amounts and costs, not the whole balance."],
+["LAW","In Illinois, a contractor's mechanic's lien claim should be recorded within how long after completing the work to be effective against other creditors and purchasers?","4 months","30 days","1 year","2 years","Suit to enforce the lien must be filed within two years of completion."],
+["LAW","In Illinois, which contracts must be in writing under the Statute of Frauds?","Contracts for the sale of land and leases for more than one year","All leases","All listing agreements only","Only contracts over $500,000","An oral lease for one year or less is enforceable."],
+["LAW","The statute of limitations on written contracts in Illinois is:","10 years","2 years","5 years","20 years","Oral contracts have a five-year limit."],
+["LAW","The age of legal competence to contract in Illinois is:","18","16","19","21","A contract with a minor is voidable by the minor."],
+["LAW","In an Illinois land trust, the beneficiary's interest is:","Personal property","A fee simple estate","A life estate","A leasehold","The trustee holds legal and equitable title. The beneficiary controls the property and keeps ownership private."],
+["LAW","Under the Illinois Security Deposit Return Act, a landlord of a building with 5 or more units must return the deposit within:","45 days after the tenant vacates","10 days","30 days","90 days","An itemized statement of any deductions is due within 30 days."],
+["LAW","Under the Illinois Security Deposit Return Act, a landlord who deducts for damage must give the tenant an itemized statement within:","30 days after the tenant vacates","5 days","45 days","60 days","A landlord who acts in bad faith may owe twice the deposit plus attorney's fees."],
+["LAW","Illinois law requires landlords to pay interest on security deposits held more than six months in buildings or complexes with:","25 or more units","5 or more units","2 or more units","100 or more units","This is the Security Deposit Interest Act. Local ordinances such as Chicago's may be stricter."],
+["LAW","To end a tenancy for nonpayment of rent, an Illinois landlord must first give the tenant a written:","5-day notice","24-hour notice","30-day notice","60-day notice","If rent is not paid within the notice period, the landlord may file an eviction action."],
+["LAW","For a lease violation other than nonpayment of rent, an Illinois landlord gives a:","10-day notice","5-day notice","3-day notice","60-day notice","The notice states that the lease will end because of the default."],
+["LAW","An Illinois landlord may remove a tenant who will not leave by:","Filing an eviction action and having the sheriff enforce the court's order","Changing the locks","Removing the tenant's belongings","Shutting off the utilities","Self-help evictions are illegal."],
+["LAW","Notice to end a month-to-month tenancy in Illinois must be given at least:","30 days in advance","7 days in advance","60 days in advance","90 days in advance","A year-to-year tenancy requires 60 days' notice."],
+["LAW","When an Illinois resident dies without a will, leaving a spouse and children, the estate passes:","One-half to the spouse and one-half to the children","All to the spouse","All to the children","One-third to the spouse and two-thirds to the children","If there are no descendants, the spouse takes the entire estate."],
+["LAW","If an Illinois resident dies with no will and no heirs, real property escheats to the:","County in which it is located","State of Illinois general fund","Federal government","Municipality","In Illinois, real estate escheats to the county."],
+["LAW","A valid Illinois will must be signed by the testator and attested by:","Two credible witnesses","One witness","A notary only","Three witnesses","The testator must be at least 18 and of sound mind."],
+["LAW","A surviving spouse who renounces a will in Illinois when the deceased left descendants is entitled to:","One-third of the estate","One-half of the estate","The entire estate","Nothing","With no descendants, the renouncing spouse takes one-half."],
+["LAW","Illinois legal descriptions under the rectangular survey system refer to which principal meridians?","Second, Third and Fourth","First and Fifth","Sixth only","Tenth and Eleventh","Most of Illinois is surveyed from the Third Principal Meridian."],
+["LAW","In Illinois, deeds are recorded in the:","County where the property is located","County where the grantor lives","Office of the Secretary of State","Offices of IDFPR","Recording gives constructive notice."],
+["LAW","A judgment in Illinois becomes a lien on real estate when:","A memorandum of the judgment is recorded in the county where the property is located","The lawsuit is filed","The judge signs the order","The debtor is served","The lien lasts seven years and may be renewed."],
+["LAW","Home inspectors in Illinois are:","Licensed by IDFPR","Unregulated","Licensed by each county","Required to be licensed brokers","The Home Inspector License Act requires a license to perform home inspections for a fee."],
+["LAW","The Illinois Condominium Property Act requires that a condominium be created by recording a:","Declaration and plat","Proprietary lease","Stock certificate","Land trust agreement","The declaration sets out the units, common elements and percentage interests."],
+["LAW","After an Illinois tax sale, the owner of a home with one to six units generally has how long to redeem?","2 years and 6 months from the date of sale","30 days","6 months","10 years","If the property is not redeemed, the tax buyer may petition for a tax deed."],
+];
+
+"use strict";
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const rnd = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
+const pick = a => a[rnd(0, a.length - 1)];
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = rnd(0, i);[a[i], a[j]] = [a[j], a[i]]; } return a; };
+const money = n => { n = Math.round(n * 100) / 100; return "$" + n.toLocaleString("en-US", { minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2 }); };
+const hash = s => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0; return h.toString(36); };
+
+/* ---------- math question generators ---------- */
+function mk(t, q, correct, wrongs, e, fmt) {
+  fmt = fmt || money;
+  const c = fmt(correct), seen = new Set([c]), w = [];
+  const extra = [correct * 1.1, correct * 0.9, correct * 2, correct / 2, correct * 1.25, correct * 0.75, correct + 1, correct + 2];
+  for (const x of wrongs.concat(extra)) { if (!(x > 0) || !isFinite(x)) continue; const f = fmt(x); if (!seen.has(f)) { seen.add(f); w.push(f); } if (w.length === 3) break; }
+  return { t, q, o: [c, w[0], w[1], w[2]], e, gen: true };
+}
+const pct = n => (Math.round(n * 100) / 100) + "%";
+const num = n => (Math.round(n * 100) / 100).toLocaleString("en-US");
+const GEN_NAT = [
+  () => { const p = rnd(18, 90) * 5000, r = pick([4, 4.5, 5, 5.5, 6, 7]); return mk("MA", `A property sells for ${money(p)} and the commission rate is ${r}%. What is the total commission?`, p * r / 100, [p * r / 1000, p * (r + 1) / 100, p * r / 200], `${money(p)} x ${r}% = ${money(p * r / 100)}.`); },
+  () => { const p = rnd(20, 80) * 5000, r = pick([5, 6]), s = pick([50, 55, 60, 70]); const c = p * r / 100 / 2; return mk("MA", `A home sells for ${money(p)} at a ${r}% commission. The listing and selling firms split it equally. The selling agent receives ${s}% of the selling firm's share. How much does the selling agent receive?`, c * s / 100, [c, p * r / 100 * s / 100, c * (100 - s) / 100], `Total commission ${money(p * r / 100)}. Half is ${money(c)}. ${s}% of that is ${money(c * s / 100)}.`); },
+  () => { const n = rnd(15, 60) * 10000, r = pick([5, 6, 7]), cc = rnd(2, 9) * 1000; const sp = (n + cc) / (1 - r / 100); return mk("MA", `A seller wants to net ${money(n)} after paying a ${r}% commission and ${money(cc)} in other closing costs. What is the minimum sale price, to the nearest dollar?`, Math.round(sp), [Math.round((n + cc) * (1 + r / 100)), Math.round(n / (1 - r / 100)), Math.round(n * (1 + r / 100))], `(${money(n)} + ${money(cc)}) / (1 - ${r / 100}) = ${money(Math.round(sp))}. Divide by (100% - rate). Do not multiply by (100% + rate).`); },
+  () => { const p = rnd(15, 70) * 10000, l = pick([75, 80, 85, 90, 95]); return mk("MA", `A lender will make a loan at ${l}% loan-to-value on a home appraised and sold at ${money(p)}. What is the loan amount?`, p * l / 100, [p * (100 - l) / 100, p, p * (l - 5) / 100], `${money(p)} x ${l}% = ${money(p * l / 100)}.`); },
+  () => { const p = rnd(15, 70) * 10000, d = pick([5, 10, 15, 20, 25]); return mk("MA", `A buyer purchases a home for ${money(p)} and the lender requires ${d}% down. How much is the down payment?`, p * d / 100, [p * (100 - d) / 100, p * d / 1000, p * (d + 5) / 100], `${money(p)} x ${d}% = ${money(p * d / 100)}.`); },
+  () => { const p = rnd(20, 60) * 10000, l = pick([80, 90]), pts = pick([1, 1.5, 2, 2.5, 3]); const loan = p * l / 100; return mk("MA", `A buyer purchases a ${money(p)} home with a ${l}% loan and pays ${pts} discount points. What is the cost of the points?`, loan * pts / 100, [p * pts / 100, loan * pts / 1000, (p - loan) * pts / 100], `Points are charged on the loan, not the price. Loan = ${money(loan)}. ${money(loan)} x ${pts}% = ${money(loan * pts / 100)}.`); },
+  () => { const loan = rnd(12, 50) * 10000, r = pick([4.5, 5, 6, 6.5, 7, 7.5]); return mk("MA", `A ${money(loan)} loan has an annual interest rate of ${r}%. How much interest is due for the first month?`, loan * r / 100 / 12, [loan * r / 100, loan * r / 100 / 10, loan * r / 100 / 24], `${money(loan)} x ${r}% = ${money(loan * r / 100)} a year. Divide by 12 = ${money(loan * r / 100 / 12)}.`); },
+  () => { const r = pick([5, 6, 8, 10]), noi = rnd(20, 120) * 1000; return mk("MA", `An investment property has net operating income of ${money(noi)}. Using a ${r}% capitalization rate, what is its value?`, noi / (r / 100), [noi * r, noi * r / 100, noi / (r / 100) / 2], `Value = income / rate = ${money(noi)} / ${r / 100} = ${money(noi / (r / 100))}.`); },
+  () => { const v = rnd(4, 20) * 100000, r = pick([5, 6, 7, 8, 9]); const noi = v * r / 100; return mk("MA", `A building sells for ${money(v)} and produces net operating income of ${money(noi)}. What is the capitalization rate?`, r, [r / 2, r * 2, 100 / r], `Rate = income / value = ${money(noi)} / ${money(v)} = ${r}%.`, pct); },
+  () => { const g = rnd(8, 16) * 10, rent = rnd(9, 30) * 100; return mk("MA", `Similar homes sell at a monthly gross rent multiplier of ${g}. A home rents for ${money(rent)} per month. What is its indicated value?`, g * rent, [g * rent * 12, g * rent / 12, (g + 10) * rent], `Value = monthly rent x GRM = ${money(rent)} x ${g} = ${money(g * rent)}.`); },
+  () => { const mv = rnd(15, 60) * 10000, a = pick([25, 40, 50, 60, 100]), m = pick([18, 20, 24, 30, 35, 42]); const t = mv * a / 100 * m / 1000; return mk("MA", `A property has a market value of ${money(mv)} and is assessed at ${a}% of value. The tax rate is ${m} mills. What is the annual property tax?`, t, [mv * m / 1000, mv * a / 100 * m / 100, mv * a / 100 * m / 10000], `Assessed value = ${money(mv * a / 100)}. ${m} mills = ${m / 1000}. Tax = ${money(t)}.`); },
+  () => { const w = rnd(8, 40) * 10, d = rnd(10, 60) * 10; const ac = w * d / 43560; return mk("MA", `A rectangular lot measures ${w} feet by ${d} feet. How many acres is it, to two decimal places?`, Math.round(ac * 100) / 100, [ac * 10, ac / 2, ac * 1.5, ac * 2], `${w} x ${d} = ${num(w * d)} sq ft. Divide by 43,560 = ${num(ac)} acres.`, num); },
+  () => { const parts = shuffle([["N 1/2", 2], ["SE 1/4", 4], ["NW 1/4", 4], ["S 1/2", 2], ["NE 1/4", 4], ["SW 1/4", 4], ["E 1/2", 2]]).slice(0, rnd(2, 3)); const den = parts.reduce((a, p) => a * p[1], 1); return mk("MA", `How many acres are in the ${parts.map(p => p[0]).join(" of the ")} of a section?`, 640 / den, [640 / den * 2, 640 / den / 2, 640 / den * 4, 160], `Start with 640 acres and divide by each denominator: 640 / ${parts.map(p => p[1]).join(" / ")} = ${640 / den} acres.`, num); },
+  () => { const tax = rnd(20, 72) * 100, mo = rnd(2, 10), day = pick([10, 15, 20, 30]); const amt = tax / 360 * ((mo - 1) * 30 + day); const names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; return mk("MA", `Annual property taxes of ${money(tax)} are paid in arrears. Closing is ${names[mo - 1]} ${day}. Using a 360-day year with 30-day months, and charging the seller through the day of closing, what is the seller's tax proration?`, amt, [tax - amt, tax / 12 * mo, tax / 365 * ((mo - 1) * 30 + day)], `Days = ${mo - 1} x 30 + ${day} = ${(mo - 1) * 30 + day}. ${money(tax)} / 360 x ${(mo - 1) * 30 + day} = ${money(amt)}. It is a debit to the seller and a credit to the buyer.`); },
+  () => { const c = rnd(12, 50) * 10000, g = pick([5, 8, 10, 12, 15, 20, 25]); const s = c * (1 + g / 100); return mk("MA", `An owner bought a property for ${money(c)} and sold it for ${money(s)}. What was the percentage of profit?`, g, [Math.round(g / (1 + g / 100) * 100) / 100, g * 2, g / 2], `Profit ${money(s - c)} / original cost ${money(c)} = ${g}%. Always divide by what was paid.`, pct); },
+  () => { const p = rnd(20, 70) * 10000, l = pick([70, 75, 80, 90, 95]); return mk("MA", `A home appraised at ${money(p)} has a loan of ${money(p * l / 100)}. What is the loan-to-value ratio?`, l, [100 - l, l - 5, l + 5 > 99 ? 85 : l + 5], `Loan / value = ${money(p * l / 100)} / ${money(p)} = ${l}%.`, pct); },
+  () => { const w = rnd(10, 20), d = rnd(12, 30), price = pick([24, 30, 36, 45]); const yd = w * d / 9; return mk("MA", `A room measures ${w} feet by ${d} feet. Carpet costs ${money(price)} per square yard installed. What is the cost to carpet the room?`, yd * price, [w * d * price, w * d / 3 * price, yd * price / 2], `${w} x ${d} = ${w * d} sq ft. Divide by 9 = ${num(yd)} sq yd. Times ${money(price)} = ${money(yd * price)}.`); },
+];
+const GEN_IL = [
+  () => { const p = rnd(20, 120) * 5000; return mk("LAW", `A property in Illinois sells for ${money(p)}. There is no municipal transfer tax. What is the combined state and county transfer tax?`, p / 500 * 0.75, [p / 500 * 0.5, p / 500 * 0.25, p / 1000 * 0.75], `State $0.50 + county $0.25 = $0.75 per $500. ${money(p)} / 500 = ${num(p / 500)} units x $0.75 = ${money(p / 500 * 0.75)}.`); },
+  () => { const p = rnd(20, 120) * 5000; return mk("LAW", `A home in Illinois sells for ${money(p)}. How much is the STATE transfer tax alone?`, p / 500 * 0.5, [p / 500 * 0.75, p / 500 * 0.25, p / 1000 * 0.5], `State tax is $0.50 per $500. ${num(p / 500)} x $0.50 = ${money(p / 500 * 0.5)}.`); },
+  () => { const mv = rnd(10, 40) * 30000, eq = pick([1, 1.05, 1.1, 1.2]), r = pick([6, 7, 8, 9, 10]); const av = mv / 3, t = av * eq * r / 100; return mk("LAW", `An Illinois home outside Cook County has a market value of ${money(mv)} and is assessed at 33 1/3%. The equalization factor is ${eq} and the tax rate is ${r}%. What is the annual tax?`, t, [mv * eq * r / 100, av * r / 100 * (eq === 1 ? 1.5 : 1), av * eq * r / 1000], `Assessed value = ${money(av)}. Equalized = ${money(av * eq)}. Tax = ${money(av * eq)} x ${r}% = ${money(t)}.`); },
+];
+
+/* ---------- banks ---------- */
+function prep(raw, tag) { return raw.map(r => ({ id: tag + hash(r[1]), t: r[0], q: r[1], o: r.slice(2, 6), e: r[6] })); }
+const BANKS = {
+  IL: {
+    name: "Illinois", tag: "State portion", blurb: "License Act of 2000, agency, disclosures and Illinois law.",
+    items: prep(ILLINOIS, "i"), gens: GEN_IL,
+    topics: { LIC: "Licensing requirements", AGY: "Agency and brokerage agreements", ACT: "License Act business practices", DSC: "Discipline and Recovery Fund", DIS: "Disclosures", LAW: "Additional Illinois laws" },
+    exam: { n: 40, min: 90, pass: 75, w: { LIC: 4, AGY: 6, ACT: 6, DSC: 4, DIS: 10, LAW: 10 } }
+  },
+  NAT: {
+    name: "National", tag: "General portion", blurb: "Ownership, contracts, agency, finance, valuation, fair housing and math.",
+    items: prep(NATIONAL, "n"), gens: GEN_NAT,
+    topics: { PO: "Property ownership", LU: "Land use controls", VA: "Valuation and market analysis", FI: "Financing", AG: "General principles of agency", DI: "Property disclosures", CO: "Contracts", LE: "Leasing and property management", TT: "Transfer of title", PR: "Practice of real estate", MA: "Real estate calculations" },
+    exam: { n: 100, min: 150, pass: 70, w: { PO: 8, LU: 5, VA: 7, FI: 10, AG: 13, DI: 6, CO: 17, LE: 3, TT: 8, PR: 13, MA: 10 } }
+  }
+};
+
+/* ---------- storage ---------- */
+const KEY = "retb.v1";
+let DB = { s: {}, h: [], bank: "IL", theme: "" };
+try { const j = JSON.parse(localStorage.getItem(KEY) || "null"); if (j && j.s) DB = Object.assign(DB, j); } catch (e) { }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(DB)); } catch (e) { } };
+const st = id => DB.s[id] || (DB.s[id] = { n: 0, c: 0, l: -1, f: 0 });
+const peek = id => DB.s[id] || { n: 0, c: 0, l: -1, f: 0 };
+function record(item, ok) { if (item.gen) return; const s = st(item.id); s.n++; if (ok) s.c++; s.l = ok ? 1 : 0; }
+function applyTheme() { if (DB.theme) document.documentElement.setAttribute("data-theme", DB.theme); else document.documentElement.removeAttribute("data-theme"); }
+
+/* ---------- state ---------- */
+let S = null, tick = null;
+const bank = () => BANKS[DB.bank];
+const app = () => $("#app");
+function stopTimer() { if (tick) { clearInterval(tick); tick = null; } }
+function go(fn) { stopTimer(); S = null; fn(); window.scrollTo(0, 0); }
+
+function bankStats(b) {
+  let seen = 0, good = 0, n = 0, c = 0;
+  for (const it of b.items) { const s = peek(it.id); if (s.n) seen++; if (s.l === 1) good++; n += s.n; c += s.c; }
+  return { total: b.items.length, seen, good, acc: n ? Math.round(c / n * 100) : null };
+}
+
+/* ---------- home ---------- */
+function home() {
+  const b = bank();
+  let h = `<h1 style="font-size:2.1rem">Pass both portions the first time.</h1>
+  <p class="lead">Two separate question banks, built around the PSI content outlines for the Illinois broker exam. Pick a bank, then pick how you want to study. Your progress is saved in this browser.</p><div class="banks">`;
+  for (const k of ["IL", "NAT"]) {
+    const x = BANKS[k], s = bankStats(x);
+    h += `<button class="bank" data-bank="${k}" aria-pressed="${DB.bank === k}"><span class="tag">${x.tag}</span><h2>${x.name} bank</h2><p>${x.blurb}</p>
+    <div class="nums"><div><b>${s.total}</b><span>questions</span></div><div><b>${s.seen}</b><span>seen</span></div><div><b>${s.good}</b><span>mastered</span></div><div><b>${s.acc === null ? "-" : s.acc + "%"}</b><span>accuracy</span></div></div></button>`;
+  }
+  const missed = b.items.filter(i => peek(i.id).l === 0).length, flagged = b.items.filter(i => peek(i.id).f).length;
+  h += `</div><div class="sec">Study the ${b.name} bank</div><div class="modes">
+  <button class="mode hot" data-go="setup"><b>Practice</b><span>Instant feedback with the rule behind every answer. Choose topics and length.</span></button>
+  <button class="mode hot" data-go="exam"><b>Exam simulation</b><span>${b.exam.n} questions, ${b.exam.min} minutes, ${b.exam.pass}% to pass. Weighted like the real exam.</span></button>
+  <button class="mode" data-go="flash"><b>Flashcards</b><span>Recall the answer before you see it. Fast review of unseen and missed items.</span></button>
+  <button class="mode" data-go="math"><b>${DB.bank === "IL" ? "Illinois tax math" : "Math drill"}</b><span>Fresh numbers every time, with worked solutions. It never runs out.</span></button>
+  <button class="mode" data-go="missed"${missed ? "" : " disabled"}><b>Missed questions (${missed})</b><span>Only the ones you got wrong last time, until you get them right.</span></button>
+  <button class="mode" data-go="flagged"${flagged ? "" : " disabled"}><b>Flagged (${flagged})</b><span>Questions you marked to come back to.</span></button>
+  <button class="mode" data-go="browse"><b>Browse and search</b><span>Read every question with its answer and explanation.</span></button></div>
+  <div class="sec">Progress by topic</div><div class="card">`;
+  for (const t in b.topics) {
+    const its = b.items.filter(i => i.t === t); let g = 0, r = 0;
+    its.forEach(i => { const l = peek(i.id).l; if (l === 1) g++; else if (l === 0) r++; });
+    h += `<div class="trow"><span>${b.topics[t]}</span><div class="bar" title="${g} right, ${r} missed, ${its.length - g - r} not yet answered"><i class="g" style="width:${g / its.length * 100}%"></i><i class="r" style="width:${r / its.length * 100}%"></i></div><em>${g}/${its.length}</em></div>`;
+  }
+  h += `</div>`;
+  const hist = DB.h.filter(x => x.b === DB.bank).slice(-6).reverse();
+  if (hist.length) { h += `<div class="sec">Recent exam simulations</div><div class="card">`; hist.forEach(x => h += `<div class="trow"><span>${new Date(x.d).toLocaleDateString()}</span><div class="bar"><i class="${x.p >= b.exam.pass ? "g" : "r"}" style="width:${x.p}%"></i></div><em>${x.p}% ${x.p >= b.exam.pass ? "pass" : "fail"}</em></div>`); h += `</div>`; }
+  h += `<p class="foot">Real exam format: National portion 100 questions in 150 minutes, 70% to pass. Illinois portion 40 questions in 90 minutes, 75% to pass. Each portion is scored separately. Illinois content reflects the License Act amendments effective January 1, 2025 and rules through 2026. This is a study aid written for practice. It is not affiliated with PSI or IDFPR, and laws change, so confirm anything critical in your pre-license course materials and the current PSI candidate handbook. <button class="btn alt" data-go="reset" style="padding:4px 10px;font-size:.78rem;margin-left:6px">Reset my progress</button></p>`;
+  app().innerHTML = h;
+}
+
+/* ---------- practice setup ---------- */
+function setup() {
+  const b = bank();
+  let h = `<h1>Practice: ${b.name} bank</h1><p class="lead">Choose what to work on. "Smart order" puts unseen and missed questions first.</p><div class="card">
+  <fieldset><legend>Topics</legend><div class="row" style="margin-bottom:6px"><button class="btn alt" data-all="1" style="padding:4px 10px;font-size:.8rem">All</button><button class="btn alt" data-all="0" style="padding:4px 10px;font-size:.8rem">None</button></div>`;
+  for (const t in b.topics) h += `<label class="chk"><input type="checkbox" name="t" value="${t}" checked> ${b.topics[t]} (${b.items.filter(i => i.t === t).length})</label>`;
+  h += `</fieldset><fieldset><legend>Which questions</legend>
+  <label class="chk"><input type="radio" name="f" value="smart" checked> Smart order</label><label class="chk"><input type="radio" name="f" value="new"> Not yet seen</label><label class="chk"><input type="radio" name="f" value="missed"> Missed last time</label><label class="chk"><input type="radio" name="f" value="all"> Random</label></fieldset>
+  <fieldset><legend>How many</legend>${[10, 25, 50, 0].map((n, i) => `<label class="chk"><input type="radio" name="n" value="${n}"${i === 1 ? " checked" : ""}> ${n || "All of them"}</label>`).join("")}</fieldset>
+  <div class="row"><button class="btn" id="start">Start practice</button><button class="btn alt" data-go="home">Back</button><span id="msg" class="no"></span></div></div>`;
+  app().innerHTML = h;
+  $("#start").onclick = () => {
+    const ts = [...document.querySelectorAll("input[name=t]:checked")].map(x => x.value);
+    const f = document.querySelector("input[name=f]:checked").value, n = +document.querySelector("input[name=n]:checked").value;
+    let pool = shuffle(b.items.filter(i => ts.includes(i.t)));
+    if (f === "new") pool = pool.filter(i => !peek(i.id).n);
+    if (f === "missed") pool = pool.filter(i => peek(i.id).l === 0);
+    if (f === "smart") { const rank = i => { const s = peek(i.id); return s.l === 0 ? 0 : !s.n ? 1 : 2; }; pool.sort((x, y) => rank(x) - rank(y)); }
+    if (n) pool = pool.slice(0, n);
+    if (f === "smart") pool = shuffle(pool);
+    if (!pool.length) { $("#msg").textContent = "No questions match that selection."; return; }
+    start(pool, "practice", "Practice");
+  };
+}
+
+/* ---------- session ---------- */
+function start(items, mode, label, minutes) {
+  stopTimer();
+  S = { mode, label, i: 0, qs: items.map(it => ({ it, ord: shuffle([0, 1, 2, 3]), a: null })), end: minutes ? Date.now() + minutes * 60000 : 0, done: false };
+  if (minutes) tick = setInterval(() => { const el = $("#timer"); if (!S) return stopTimer(); const left = S.end - Date.now(); if (left <= 0) return finish(); if (el) { el.textContent = clock(left); el.classList.toggle("low", left < 300000); } }, 500);
+  render(); window.scrollTo(0, 0);
+}
+const clock = ms => { const s = Math.max(0, Math.round(ms / 1000)); return Math.floor(s / 3600) + ":" + String(Math.floor(s % 3600 / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0"); };
+function topicName(it) { return BANKS.IL.topics[it.t] || BANKS.NAT.topics[it.t]; }
+
+function render() {
+  const Q = S.qs[S.i], it = Q.it, exam = S.mode === "exam", answered = Q.a !== null, show = !exam && answered;
+  let h = `<div class="qhead"><span class="chip">${esc(topicName(it))}</span><span>${esc(S.label)} · Question ${S.i + 1} of ${S.qs.length}</span><span style="flex:1"></span>
+  ${exam ? `<span class="timer" id="timer">${clock(S.end - Date.now())}</span>` : ""}
+  ${it.gen ? "" : `<button class="btn alt" id="flag" style="padding:4px 10px;font-size:.8rem" aria-pressed="${!!peek(it.id).f}">${peek(it.id).f ? "Flagged" : "Flag"}</button>`}
+  <button class="btn alt" id="quit" style="padding:4px 10px;font-size:.8rem">${exam ? "Finish exam" : "End session"}</button></div>
+  <div class="prog"><i style="width:${(S.i + (answered ? 1 : 0)) / S.qs.length * 100}%"></i></div>
+  <div class="card"><h2 class="qtext">${esc(it.q)}</h2><div role="group" aria-label="Answer choices">`;
+  Q.ord.forEach((oi, k) => {
+    let cls = "opt";
+    if (show) { if (oi === 0) cls += " right"; else if (Q.a === oi) cls += " wrong"; } else if (Q.a === oi) cls += " sel";
+    h += `<button class="${cls}" data-o="${oi}"${show ? " disabled" : ""}><span class="k">${"ABCD"[k]}</span><span>${esc(it.o[oi])}</span></button>`;
+  });
+  h += `</div>`;
+  if (show) h += `<div class="why" aria-live="polite"><b class="${Q.a === 0 ? "ok" : "no"}">${Q.a === 0 ? "Correct." : "Not quite."}</b> ${Q.a === 0 ? "" : "The answer is <b>" + esc(it.o[0]) + "</b>. "}${esc(it.e)}</div>`;
+  h += `<div class="row" style="margin-top:14px">`;
+  if (exam) h += `<button class="btn alt" id="prev"${S.i ? "" : " disabled"}>Previous</button><button class="btn" id="next">${S.i === S.qs.length - 1 ? "Review and finish" : "Next"}</button>`;
+  else h += `<button class="btn" id="next"${answered ? "" : " disabled"}>${S.i === S.qs.length - 1 ? "See results" : "Next question"}</button>`;
+  h += `<span style="color:var(--muted);font-size:.8rem">Keys: A to D or 1 to 4 to answer, Enter for next</span></div>`;
+  if (exam) h += `<div class="nav" aria-label="Question navigator">${S.qs.map((q, n) => `<button data-j="${n}" class="${q.a !== null ? "a" : ""}${n === S.i ? " c" : ""}${!q.it.gen && peek(q.it.id).f ? " f" : ""}" aria-label="Question ${n + 1}">${n + 1}</button>`).join("")}</div>`;
+  h += `</div>`;
+  app().innerHTML = h;
+}
+function answer(oi) {
+  const Q = S.qs[S.i]; if (S.mode !== "exam" && Q.a !== null) return;
+  Q.a = oi; if (S.mode !== "exam") { record(Q.it, oi === 0); save(); }
+  render(); if (S.mode !== "exam") { const n = $("#next"); if (n) n.focus(); }
+}
+function next() { if (S.i < S.qs.length - 1) { S.i++; render(); window.scrollTo(0, 0); } else if (S.mode === "exam") { const un = S.qs.filter(q => q.a === null).length; if (!un || confirm(un + " question(s) are unanswered. Finish anyway?")) finish(); } else finish(); }
+function finish() {
+  stopTimer(); if (!S || S.done) return; S.done = true;
+  const b = bank(), exam = S.mode === "exam";
+  if (exam) { S.qs.forEach(q => record(q.it, q.a === 0)); }
+  const done = S.qs.filter(q => q.a !== null), right = S.qs.filter(q => q.a === 0).length, tot = exam ? S.qs.length : done.length, p = tot ? Math.round(right / tot * 100) : 0;
+  if (exam) DB.h.push({ d: Date.now(), b: DB.bank, p }); save();
+  const by = {}; (exam ? S.qs : done).forEach(q => { const k = topicName(q.it); by[k] = by[k] || [0, 0]; by[k][1]++; if (q.a === 0) by[k][0]++; });
+  let h = `<h1>${esc(S.label)} results</h1><div class="card" style="margin:16px 0"><div class="score"><div class="big">${p}%</div><div><b>${right} of ${tot} correct</b><br><span style="color:var(--muted)">${exam ? "Passing score for this portion is " + b.exam.pass + "%." : tot ? "Answered " + tot + " of " + S.qs.length + "." : "No questions answered."}</span></div>
+  ${exam ? `<span class="stamp ${p >= b.exam.pass ? "p" : "x"}">${p >= b.exam.pass ? "Pass" : "Not yet"}</span>` : ""}</div></div><div class="card">`;
+  for (const k in by) h += `<div class="trow"><span>${esc(k)}</span><div class="bar"><i class="g" style="width:${by[k][0] / by[k][1] * 100}%"></i><i class="r" style="width:${(by[k][1] - by[k][0]) / by[k][1] * 100}%"></i></div><em>${by[k][0]}/${by[k][1]}</em></div>`;
+  const wrong = (exam ? S.qs : done).filter(q => q.a !== 0);
+  h += `</div><div class="row" style="margin:18px 0">${wrong.length ? `<button class="btn" id="redo">Retry the ${wrong.length} I missed</button>` : ""}<button class="btn alt" data-go="home">Back to home</button></div>`;
+  if (wrong.length) { h += `<div class="sec">Review what you missed</div><div class="card">`; wrong.forEach(q => h += `<div class="rev"><p class="q">${esc(q.it.q)}</p>${q.a === null ? `<p class="no">Not answered</p>` : `<p class="no">Your answer: ${esc(q.it.o[q.a])}</p>`}<p class="ok">Correct answer: ${esc(q.it.o[0])}</p><p>${esc(q.it.e)}</p></div>`); h += `</div>`; }
+  app().innerHTML = h; window.scrollTo(0, 0);
+  const items = wrong.map(q => q.it), r = $("#redo"); if (r) r.onclick = () => start(shuffle(items), "practice", "Retry missed");
+  S = null;
+}
+
+/* ---------- other modes ---------- */
+function examStart() {
+  const b = bank(); let qs = [];
+  for (const t in b.exam.w) {
+    let pool = b.items.filter(i => i.t === t);
+    if (t === "MA") pool = pool.concat(Array.from({ length: 14 }, () => pick(b.gens)()));
+    if (t === "LAW" && DB.bank === "IL") pool = pool.concat(Array.from({ length: 2 }, () => pick(b.gens)()));
+    qs = qs.concat(shuffle(pool).slice(0, b.exam.w[t]));
+  }
+  start(shuffle(qs), "exam", b.name + " exam simulation", b.exam.min);
+}
+function mathStart() { const b = bank(), seen = new Set(), qs = []; let guard = 0; while (qs.length < 15 && guard++ < 300) { const q = pick(b.gens)(); if (!seen.has(q.q)) { seen.add(q.q); qs.push(q); } } start(qs, "practice", DB.bank === "IL" ? "Illinois tax math" : "Math drill"); }
+function flash() {
+  const b = bank(); const rank = i => { const s = peek(i.id); return s.l === 0 ? 0 : !s.n ? 1 : 2; };
+  const deck = shuffle(b.items).sort((x, y) => rank(x) - rank(y)).slice(0, 30); let i = 0, open = false, got = 0;
+  const draw = () => {
+    if (i >= deck.length) { app().innerHTML = `<h1>Deck complete</h1><p class="lead">You knew ${got} of ${deck.length}. The ones you missed will come up first next time.</p><div class="row"><button class="btn" data-go="flash">Another deck</button><button class="btn alt" data-go="home">Back to home</button></div>`; return; }
+    const it = deck[i];
+    app().innerHTML = `<div class="qhead"><span class="chip">${esc(b.topics[it.t])}</span><span>Flashcard ${i + 1} of ${deck.length}</span><span style="flex:1"></span><button class="btn alt" data-go="home" style="padding:4px 10px;font-size:.8rem">End</button></div><div class="prog"><i style="width:${i / deck.length * 100}%"></i></div>
+    <div class="card flash" id="fc" tabindex="0" role="button" aria-label="Show answer"><h2 class="qtext">${esc(it.q)}</h2>${open ? `<p class="ans">${esc(it.o[0])}</p><p style="color:var(--muted);max-width:60ch;margin:0 auto">${esc(it.e)}</p>` : `<p style="color:var(--muted)">Say the answer to yourself, then tap or press Space.</p>`}</div>
+    <div class="row" style="margin-top:14px;justify-content:center">${open ? `<button class="btn alt" id="fn">I missed it</button><button class="btn" id="fy">I knew it</button>` : `<button class="btn" id="fs">Show answer</button>`}</div>`;
+    const flip = () => { if (!open) { open = true; draw(); } }; $("#fc").onclick = flip; $("#fc").onkeydown = e => { if (e.key === " " || e.key === "Enter") { e.preventDefault(); flip(); } };
+    if (!open) { $("#fs").onclick = flip; $("#fs").focus(); }
+    else { const mark = ok => { record(it, ok); save(); if (ok) got++; i++; open = false; draw(); }; $("#fy").onclick = () => mark(true); $("#fn").onclick = () => mark(false); $("#fy").focus(); }
+  };
+  draw();
+}
+function browse() {
+  const b = bank();
+  app().innerHTML = `<h1>Browse: ${b.name} bank</h1><p class="lead">${b.items.length} questions. Type to search questions, answers and explanations.</p><div class="row" style="margin-bottom:14px"><input type="search" id="s" placeholder="Search, for example: escrow, radon, joint tenancy" aria-label="Search questions"><button class="btn alt" data-go="home">Back</button></div><div class="card" id="list"></div>`;
+  const draw = () => { const v = $("#s").value.trim().toLowerCase(); const hits = b.items.filter(i => !v || (i.q + " " + i.o[0] + " " + i.e).toLowerCase().includes(v)); $("#list").innerHTML = hits.length ? hits.map(i => `<div class="rev"><span class="chip">${esc(b.topics[i.t])}</span><p class="q">${esc(i.q)}</p><p class="ok">${esc(i.o[0])}</p><p>${esc(i.e)}</p></div>`).join("") : "<p>No questions match.</p>"; };
+  $("#s").oninput = draw; draw();
+}
+const ROUTES = {
+  home: () => go(home), setup: () => go(setup), exam: () => go(examStart), math: () => go(mathStart), flash: () => go(flash), browse: () => go(browse),
+  missed: () => { const p = bank().items.filter(i => peek(i.id).l === 0); if (p.length) go(() => start(shuffle(p), "practice", "Missed questions")); },
+  flagged: () => { const p = bank().items.filter(i => peek(i.id).f); if (p.length) go(() => start(shuffle(p), "practice", "Flagged questions")); },
+  reset: () => { if (confirm("Erase all saved progress for both banks?")) { DB.s = {}; DB.h = []; save(); go(home); } }
+};
+
+/* ---------- events ---------- */
+document.addEventListener("click", e => {
+  const t = e.target.closest("button"); if (!t) return;
+  if (t.dataset.bank) { DB.bank = t.dataset.bank; save(); return go(home); }
+  if (t.dataset.go) { if (S && S.mode === "exam" && !confirm("Leave the exam? Your answers will not be scored.")) return; return ROUTES[t.dataset.go](); }
+  if (t.dataset.all) { document.querySelectorAll("input[name=t]").forEach(x => x.checked = t.dataset.all === "1"); return; }
+  if (t.id === "theme") { const dark = DB.theme ? DB.theme === "dark" : matchMedia("(prefers-color-scheme:dark)").matches; DB.theme = dark ? "light" : "dark"; save(); return applyTheme(); }
+  if (!S) return;
+  if (t.dataset.o !== undefined) return answer(+t.dataset.o);
+  if (t.dataset.j !== undefined) { S.i = +t.dataset.j; return render(); }
+  if (t.id === "next") return next();
+  if (t.id === "prev") { S.i--; return render(); }
+  if (t.id === "flag") { const s = st(S.qs[S.i].it.id); s.f = s.f ? 0 : 1; save(); return render(); }
+  if (t.id === "quit") { if (S.mode === "exam") { const un = S.qs.filter(q => q.a === null).length; if (confirm((un ? un + " question(s) are unanswered. " : "") + "Finish and score the exam now?")) finish(); } else finish(); }
+});
+document.addEventListener("keydown", e => {
+  if (!S || e.metaKey || e.ctrlKey || e.altKey || /INPUT|TEXTAREA/.test(e.target.tagName)) return;
+  const k = e.key.toLowerCase(), idx = "abcd".indexOf(k) >= 0 ? "abcd".indexOf(k) : "1234".indexOf(k);
+  if (idx >= 0 && k.length === 1) { e.preventDefault(); return answer(S.qs[S.i].ord[idx]); }
+  if (k === "enter" || k === "arrowright") { if (S.mode === "exam" || S.qs[S.i].a !== null) { e.preventDefault(); next(); } }
+  if (k === "arrowleft" && S.mode === "exam" && S.i) { S.i--; render(); }
+});
+applyTheme(); home();
+</script>
+</body>
+</html>
